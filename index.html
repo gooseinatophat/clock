@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <main>
+      <table>
+        <tr>
+          <th><em>00</em></th>
+          <th><em>00</em></th>
+          <th><em>00</em></th>
+          <th><em>00</em></th>
+          <th><em>00</em></th>
+          <th><em>00</em></th>
+          <th><em>00</em></th>
+          <th><em>00</em></th>
+          <th><em>00</em></th>
+          <th><em>00</em></th>
+          <th><em>00</em></th>
+          <th><em>00</em></th>
+          <th><em>00</em></th>
+        </tr>
+        <tr>
+          <td class="top">6</td>
+          <td class="top fuel">·</td>
+          <td class="top">7</td>
+          <td class="top fuel">·</td>
+          <td class="top work">8</td>
+          <td class="top work">·</td>
+          <td class="top work">9</td>
+          <td class="top work">·</td>
+          <td class="top work">10</td>
+          <td class="top work">·</td>
+          <td class="top work">11</td>
+          <td class="top work">·</td>
+          <td class="right work">12</td>
+        </tr>
+        <tr>
+          <td class="left">·</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="right fuel">·</td>
+        </tr>
+        <tr>
+          <td class="left">5</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="right work">13</td>
+        </tr>
+        <tr>
+          <td class="left">·</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="right work">·</td>
+        </tr>
+        <tr>
+          <td class="left">4</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="right work">14</td>
+        </tr>
+        <tr>
+          <td class="left">·</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="right work">·</td>
+        </tr>
+        <tr>
+          <td class="left">3</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <div class="clock">
+              <div class="point"></div>
+              <div class="hour-hand-wrap" id="hour-hand">
+                <div class="hour-hand">
+                  <div class="hand"></div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="right work">15</td>
+        </tr>
+        <tr>
+          <td class="left">·</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="right work">·</td>
+        </tr>
+        <tr>
+          <td class="left">2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="right work">16</td>
+        </tr>
+        <tr>
+          <td class="left">·</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="right">·</td>
+        </tr>
+        <tr>
+          <td class="left">1</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="right">17</td>
+        </tr>
+        <tr>
+          <td class="left">·</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="right fuel">·</td>
+        </tr>
+        <tr>
+          <td class="left">0</td>
+          <td class="left">·</td>
+          <td class="left">23</td>
+          <td class="left">·</td>
+          <td class="left">22</td>
+          <td class="bottom">·</td>
+          <td class="bottom">21</td>
+          <td class="bottom">·</td>
+          <td class="bottom">20</td>
+          <td class="bottom">·</td>
+          <td class="bottom">19</td>
+          <td class="bottom nap">·</td>
+          <td class="right">18</td>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>

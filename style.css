@@ -1,0 +1,149 @@
+
+body{
+    background-color: rgb(157, 154, 182);
+}
+main{
+    margin-top: 20vw;
+    margin-bottom: 20vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: #00000000;
+    padding: 11vw;
+    padding-top: 6vw;
+    padding-bottom: 11vw;
+    padding-right: 11vw;
+    padding-left: 11vw;
+}
+
+.clock{
+    position: relative;
+    border-radius: 50%;
+    border: 1px dashed black;
+    margin: 0 auto;
+    width: 2vw;
+    height: 2vw;
+}
+.point{
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.75vw;
+    left: 0.75vw;
+}
+.hour-hand-wrap{
+    background-color: rgba(240, 248, 255, 0.411);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+}
+.hour-hand .hand{
+    position: relative;
+    --rotation: 0;
+    width: 0.30vw;
+    height: 20vw;
+    background-color: black;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: bottom;    
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+ .top{
+    background-color:#f4faa4 ;
+ }
+ .left{
+    background-color:#4a32a1 ;
+ } 
+ .right{
+    background-color:#fcdb81 ;
+ }  
+ .bottom{
+    background-color:#c76fe2 ;
+ }
+.work:hover{
+    animation:redi 4s forwards
+}
+@keyframes redi{
+0%{
+    background-color:#dd6550 ;
+}
+25%{
+    background-color: #cecdff;
+}
+}
+.fuel:hover{
+    animation: fuel 4s forwards
+}
+@keyframes fuel{
+0%{
+    background-color:#8ffc81 ;
+}
+25%{
+    background-color: #cecdff;
+}
+}
+.nap:hover{
+    animation: nap 4s forwards
+}
+@keyframes nap{
+0%{
+    background-color:#00ffff ;
+}
+25%{
+    background-color: #cecdff;
+}
+}
+.left:hover{
+    animation: night 0.5s infinite
+}
+@keyframes night{
+0%{
+    background-image: url(stars.jpg);
+    background-size: cover;
+}
+25%{
+    background-image: url(stars.jpg);
+    background-size: contain;
+}
+50%{
+    background-image: url(stars.jpg);
+    background-size: cover;
+}
+75%{
+    background-image: url(stars.jpg);
+    background-size: contain;
+}
+100%{
+    background-image: url(stars.jpg);
+    background-size: cover;
+}
+}
+tr{
+    font-weight: bold;
+}
+td, th, em{
+    font-size: 1.5vw;
+    border: 1px dashed white;
+}
+th{
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw; 
+}
+.left , .right , .bottom, .top{
+    border: 2px solid;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    text-align: center;
+}
+em{
+    color: rgba(240, 248, 255, 0);
+}
