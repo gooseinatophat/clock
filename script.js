@@ -1,9 +1,12 @@
 function openForm() {document.getElementById("myForm").style.display = "block";
 }
-/* function openForm() {document.getElementById("myForm").style.display = "block";
-} */
+function openIndex() {document.getElementById("iForm").style.display = "block";
+}
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
+  }
+function closeiForm() {
+    document.getElementById("iForm").style.display = "none";
   }
 
 let s= 0;
@@ -26,6 +29,7 @@ setInterval(
     document.getElementById("eve").style.width=  min/15*um + uh*(h-18)  + "px";
     document.getElementById("night").style.height=  min/15*um + uh*(h-24) + "px";
     document.getElementById("seconds").innerHTML= d.getSeconds();
+    document.getElementById("time").innerHTML= h + ":" + min;
   },100
 );
 
