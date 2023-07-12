@@ -7,229 +7,260 @@
     <title>Clock</title>
   </head>
   <body>
-    <script src="script.js"></script>
-    <main>
-      <table>
-        <tr>
-          <th><em>00</em></th>
-          <th><em>00</em></th>
-          <th><em>00</em></th>
-          <th><em>00</em></th>
-          <th><em>00</em></th>
-          <th><em>00</em></th>
-          <th><em>00</em></th>
-          <th><em>00</em></th>
-          <th><em>00</em></th>
-          <th><em>00</em></th>
-          <th><em>00</em></th>
-          <th><em>00</em></th>
-          <th><em>00</em></th>
-        </tr>
-        <tr>
-          <td class="top">6</td>
-          <td class="top fuel">·</td>
-          <td class="top">7</td>
-          <td class="top fuel">·</td>
-          <td class="top work">8</td>
-          <td class="top work">·</td>
-          <td class="top work">9</td>
-          <td class="top work">·</td>
-          <td class="top work">10</td>
-          <td class="top work">·</td>
-          <td class="top work">11</td>
-          <td class="top work">·</td>
-          <td class="right work">12</td>
-        </tr>
-        <tr>
-          <td class="left">·</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="right fuel">·</td>
-        </tr>
-        <tr>
-          <td class="left">5</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="right work">13</td>
-        </tr>
-        <tr>
-          <td class="left">·</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="right work">·</td>
-        </tr>
-        <tr>
-          <td class="left">4</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="right work">14</td>
-        </tr>
-        <tr>
-          <td class="left">·</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="right work">·</td>
-        </tr>
-        <tr>
-          <td class="left">3</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>
-            <div class="clock">
-              <div class="point"></div>
-              <div class="hour-hand-wrap" id="hour-hand">
-                <div class="hour-hand">
-                  <div class="hand"></div>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="right work">15</td>
-        </tr>
-        <tr>
-          <td class="left">·</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="right work">·</td>
-        </tr>
-        <tr>
-          <td class="left">2</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="right work">16</td>
-        </tr>
-        <tr>
-          <td class="left">·</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="right">·</td>
-        </tr>
-        <tr>
-          <td class="left">1</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="right">17</td>
-        </tr>
-        <tr>
-          <td class="left">·</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="right fuel">·</td>
-        </tr>
-        <tr>
-          <td class="left">0</td>
-          <td class="left">·</td>
-          <td class="left">23</td>
-          <td class="left">·</td>
-          <td class="left">22</td>
-          <td class="bottom">·</td>
-          <td class="bottom">21</td>
-          <td class="bottom">·</td>
-          <td class="bottom">20</td>
-          <td class="bottom">·</td>
-          <td class="bottom">19</td>
-          <td class="bottom nap">·</td>
-          <td class="right">18</td>
-        </tr>
-      </table>
-    </main>
+
+    <div class="timesquare">
+      <div class="start">start</div>
+      <div class="noon"></div>
+      <div class="midpm"></div>
+      <div class="am"></div>
+
+      <div  id="morning"></div>
+      <div  id="noon"></div>
+      <div  id="eve"></div>
+      <div  id="night"></div>
+    
+   
+      <div class="barrier">
+
+      
+        <form action="/action_page.php" class="container" id="myForm">
+        <label for="notes">Good Morning</label>
+        <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+        <input type="text" placeholder="dreamt of ..." name="notes" />
+        <input type="checkbox" id="box1" name="box1" value="good" />
+        <label for="box1">slept well</label><br /><input
+        type="checkbox"
+        id="box2"
+        name="box2"
+        value="bad"
+        /><label for="box2">sleep issues</label>
+       </form>
+
+    
+        <div class="time1"></div>
+        <div class="time2"></div>
+        <div class="time3"></div>
+        <div class="time4"></div>
+        <button id="seconds"></button>
+    
+    <div class="line zero">
+      <button class="top edge nr" onclick="openForm()">06</button
+      ><button class="top space other"></button><button class="top t">⍿</button
+      ><button class="top other space"></button><button class="top t">·</button
+      ><button class="top other space"></button><button class="top t">⍿</button
+      ><button class="top fuel space"></button><button class="top nr">07</button
+      ><button class="top fuel space"></button><button class="top t">⍿</button
+      ><button class="top fuel space"></button><button class="top t">·</button
+      ><button class="top fuel space"></button><button class="top t">⍿</button
+      ><button class="top other space"></button><button class="top nr">08</button
+      ><button class="top other space"></button><button class="top t">⍿</button
+      ><button class="top other space"></button><button class="top t">·</button
+      ><button class="top commute space"></button><button class="top t">⍿</button
+      ><button class="top commute space"></button><button class="top nr">09</button
+      ><button class="top work space"></button><button class="top t">⍿</button
+      ><button class="top work space"></button><button class="top t">·</button
+      ><button class="top work space"></button><button class="top t">⍿</button
+      ><button class="top work space"></button
+      ><button class="top nr ">10</button
+      ><button class="top work space"></button><button class="top t">⍿</button
+      ><button class="top work space"></button><button class="top t">·</button
+      ><button class="top break space"></button><button class="top t">⍿</button
+      ><button class="top work space"></button
+      ><button class="top nr ">11</button
+      ><button class="top work space"></button><button class="top t">⍿</button
+      ><button class="top work space"></button><button class="top t">·</button
+      ><button class="top work space"></button><button class="top t">⍿</button
+      ><button class="top work space"></button
+      ><button class="top edge nr">12</button>
+    </div>
+    <div class="line space1">
+      <button class="left  night space"></button><button class="right fuel space"></button>
+    </div>
+    <div class="line mm 1time">
+      <button class="left t">⍿</button><button class="right t">⍿</button>
+    </div>
+    <div class="line 2space">
+      <button class="left  night space"></button><button class="right fuel space"></button>
+    </div>
+    <div class="line mm 2time">
+      <button class="left t">·</button><button class="right t">·</button>
+    </div>
+    <div class="line 3space">
+      <button class="left  night space"></button><button class="right fuel space"></button>
+    </div>
+    <div class="line mm 3time">
+      <button class="left t">⍿</button><button class="right  t">⍿</button>
+    </div>
+    <div class="line 4space">
+      <button class="left  night space"></button><button class="right fuel space"></button>
+    </div>
+    <div class="line mn 4time">
+      <button class="left nr">05</button><button class="right  nr ">13</button>
+    </div>
+    <div class="line space5">
+      <button class="left  night space"></button><button class="right work space"></button>
+    </div>
+    <div class="line mm 5time">
+      <button class="left t">⍿</button><button class="right  t">⍿</button>
+    </div>
+    <div class="line 5space">
+      <button class="left  night space"></button><button class="right work space"></button>
+    </div>
+    <div class="line mm 6time">
+      <button class="left t">·</button><button class="right  t">·</button>
+    </div>
+    <div class="line 7space">
+      <button class="left  night space"></button><button class="right work space"></button>
+    </div>
+    <div class="line mm 7time">
+      <button class="left t">⍿</button><button class="right  t">⍿</button>
+    </div>
+    <div class="line 8space">
+      <button class="left  night space"></button><button class="right work space"></button>
+    </div>
+    <div class="line mn 8time">
+      <button class="left nr">04</button><button class="right   nr">14</button>
+    </div>
+    <div class="line space9">
+      <button class="left  night space"></button><button class="right work space"></button>
+    </div>
+    <div class="line mm 9time">
+      <button class="left t">⍿</button><button class="right  t">⍿</button>
+    </div>
+    <div class="line 10space">
+      <button class="left  night space"></button><button class="right break space"></button>
+    </div>
+    <div class="line mm 10time">
+      <button class="left t">·</button><button class="right  t">·</button>
+    </div>
+    <div class="line 11space">
+      <button class="left  night space"></button><button class="right work space"></button>
+    </div>
+    <div class="line mm 11time">
+      <button class="left t">⍿</button><button class="right  t">⍿</button>
+    </div>
+    <div class="line 12space">
+      <button class="left  night space"></button><button class="right work space"></button>
+    </div>
+    <div class="line mn 12time">
+      <button class="left nr">03</button><button class="right   nr">15</button>
+    </div>
+    <div class="line space13">
+      <button class="left  night space"></button><button class="right work space"></button>
+    </div>
+    <div class="line mm 13time">
+      <button class="left t">⍿</button><button class="right  t">⍿</button>
+    </div>
+    <div class="line 14space">
+      <button class="left  night space"></button><button class="right work space"></button>
+    </div>
+    <div class="line mm 14time">
+      <button class="left t">·</button><button class="right  t">·</button>
+    </div>
+    <div class="line 15space">
+      <button class="left  night space"></button><button class="right work space"></button>
+    </div>
+    <div class="line mm 15time">
+      <button class="left t">⍿</button><button class="right  t">⍿</button>
+    </div>
+    <div class="line 16space">
+      <button class="left  night space"></button><button class="right work space"></button>
+    </div>
+    <div class="line mn 16time">
+      <button class="left nr">02</button><button class="right   nr">16</button>
+    </div>
+    <div class="line space17">
+      <button class="left  night space"></button><button class="right commute space"></button>
+    </div>
+    <div class="line mm 17time">
+      <button class="left t">⍿</button><button class="right  t">⍿</button>
+    </div>
+    <div class="line 18space">
+      <button class="left  night space"></button><button class="right commute space"></button>
+    </div>
+    <div class="line mm 18time">
+      <button class="left t">·</button><button class="right  t">·</button>
+    </div>
+    <div class="line 19space">
+      <button class="left  night space"></button><button class="right other space"></button>
+    </div>
+    <div class="line mm 19time">
+      <button class="left t">⍿</button><button class="right  t">⍿</button>
+    </div>
+    <div class="line 20space">
+      <button class="left  night space"></button><button class="right other space"></button>
+    </div>
+    <div class="line mn 20time">
+      <button class="left nr">01</button><button class="right   nr">17</button>
+    </div>
+    <div class="line space21">
+      <button class="left  night space"></button><button class="right other space"></button>
+    </div>
+    <div class="line mm 21time">
+      <button class="left t">⍿</button><button class="right  t">⍿</button>
+    </div>
+    <div class="line 22space">
+      <button class="left  night space"></button><button class="right fuel space"></button>
+    </div>
+    <div class="line mm 22time">
+      <button class="left t">·</button><button class="right  t">·</button>
+    </div>
+    <div class="line 23space">
+      <button class="left  night space"><button class="right fuel space"></button>
+    </div>
+    <div class="line mm 23time">
+      <button class="left t">⍿</button><button class="right  t">⍿</button>
+    </div>
+    <div class="line space24">
+      <button class="left  night space"></button
+      ><button class="right fuel space"></button>
+    </div>
+    <div class="line last">
+      <button class="left b edge nr">00</button
+      ><button class="left  night space"></button><button class="left b t">⍿</button
+      ><button class="left  night space"></button><button class="left b t">·</button
+      ><button class="left  night space"></button><button class="left b t">⍿</button
+      ><button class="left  night space"></button
+      ><button class="left b  nr">23</button
+      ><button class="left  night space"></button><button class="left b t">⍿</button
+      ><button class="left  night space"></button><button class="left b t">·</button
+      ><button class="left  night space"></button><button class="left b t">⍿</button
+      ><button class="left  night space"></button
+      ><button class="left b  nr">22</button
+      ><button class="bottom other space"></button
+      ><button class="bottom  t">⍿</button
+      ><button class="bottom other space"></button
+      ><button class="bottom  t">·</button
+      ><button class="bottom other space"></button
+      ><button class="bottom  t">⍿</button
+      ><button class="bottom other space"></button
+      ><button class="bottom   nr">21</button
+      ><button class="bottom other space"></button
+      ><button class="bottom  t">⍿</button
+      ><button class="bottom other space"></button
+      ><button class="bottom  t">·</button
+      ><button class="bottom other space"></button
+      ><button class="bottom  t">⍿</button
+      ><button class="bottom other space"></button
+      ><button class="bottom   nr">20</button
+      ><button class="bottom other space"></button
+      ><button class="bottom  t">⍿</button
+      ><button class="bottom other space"></button
+      ><button class="bottom  t">·</button
+      ><button class="bottom other space"></button
+      ><button class="bottom  t">⍿</button
+      ><button class="bottom other space"></button
+      ><button class="bottom   nr">19</button
+      ><button class="bottom nap space"></button
+      ><button class="bottom t">⍿</button
+      ><button class="bottom nap space"></button
+      ><button class="bottom t">·</button
+      ><button class="bottom nap space"></button
+      ><button class="bottom t">⍿</button
+      ><button class="bottom nap space"></button
+      ><button class="bottom  edge nr">18</button>
+    </div></div>
+  </main>
+  <script src="script.js"></script>  
   </body>
 </html>

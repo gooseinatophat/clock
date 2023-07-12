@@ -1,104 +1,206 @@
-
 body{
-    background-color: rgb(157, 154, 182);
+    background-color: #000000;
+    margin: 0;
+    padding-top: 100px;
 }
-main{
-    margin-top: 20vw;
-    margin-bottom: 20vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    background-color: #00000000;
-    padding: 11vw;
-    padding-top: 6vw;
-    padding-bottom: 11vw;
-    padding-right: 11vw;
-    padding-left: 11vw;
-}
-
-.clock{
+.barrier{
+    width: 685px;
+    height: 685px;
+    margin: auto;
+    background-color: #000000;
+    box-sizing: border-box;
     position: relative;
-    border-radius: 50%;
-    border: 1px dashed black;
-    margin: 0 auto;
-    width: 2vw;
-    height: 2vw;
 }
-.point{
-    width: 0.5vw;
-    height: 0.5vw;
-    background-color: black;
-    border-radius: 50%;
+#seconds{
     position: absolute;
-    top: 0.75vw;
-    left: 0.75vw;
+    color: #ffffff;
+    background-color: #000000;
+    bottom: 30px;
+    left: 30px;
+    font-size: 10px;
+    display: block;
 }
-.hour-hand-wrap{
-    background-color: rgba(240, 248, 255, 0.411);
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.timesquare{
+    width: 705px;
+    height: 705px;
+    margin: auto;
+    padding: 10px;
+    background-color: #8d9e7e;
+    box-sizing: border-box;
+    position: relative;
+}
+.start{
+    font-size: 10px;
+    color:#ffffff;
+    background-color: #000000;
     top: 0;
     left: 0;
-    
+    width: 25px;
+    height: 25px;
+    position: absolute;
 }
-.hour-hand .hand{
-    position: relative;
-    --rotation: 0;
-    width: 0.30vw;
-    height: 20vw;
-    background-color: black;
-    left: 50%;
-    bottom: 50%;
-    transform-origin: bottom;    
-    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+.noon{
+    font-size: 10px;
+    color:#ffffff;
+    background-color: #5f5e5e;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
 }
+.midpm{
+    font-size: 10px;
+    color:#ffffff;
+    background-color: #5f5e5e;
+    bottom: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+.am{
+    font-size: 10px;
+    color:#ffffff;
+    background-color: #5f5e5e;
+    bottom: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+ #night, #eve, #noon, #morning{
+    position: absolute;
+    display: block;
+    height: 0px;
+    width: 0px;
+}
+#morning{
+    top: 0;
+    background-color: #fffb00;
+    height: 10px;
+/*     width: 660px;*/    
+    left: 25px;
+}
+#noon{
+    width:10px;
+/*     height: 660px;*/    
+    right: 0;
+    top: 25px;
+    background-color: #ff7b00;       
+}
+#eve{
+    bottom: 0;
+    background-color: #c300ff;    
+/*     width: 660px;*/
+    left: 25px;    
+}
+#night{
+    width:10px;
+/*     height: 660px;*/
+    left: 0;
+    top: 25px;
+    background-color: #00027a;    
+} 
+
+.time1{
+animation: morning 4s infinite;
+width: 650px;
+height: 2.5px;
+position: absolute;
+top: 20px;
+left:20px;
+background-color: #fffb00;
+}
+.time2{
+animation: noon 4s infinite ;
+height: 690px;
+width: 2.5px;
+position: absolute;
+top: 20px;
+right:20px;
+background-color: #ff6600;
+}
+.time3{
+animation: eve 4s infinite ;
+width: 690px;
+height: 2.5px;
+position: absolute;
+bottom: 20px;
+left:20px;
+background-color: #a200ff;
+}
+.time4{
+animation: nighty 4s infinite;
+height: 690px;
+width: 2.5px;
+position: absolute;
+top: 20px;
+left:20px;
+background-color: #5900ff;
+}
+@keyframes morning{
+    0%{width: 0px;}
+    25%{width: 650px;}
+    100%{background-color: #00000000;}
+}
+@keyframes noon{
+    0%{height: 0px;}    
+    25%{height: 0px; background-color: #ff6600;}
+    50%{height: 645px;}
+    100%{background-color: #00000000;}
+
+}
+@keyframes eve{
+    0%{width: 650px; background-color: #00000000;}
+    50%{width: 650px;}
+    75%{width: 0px;}
+    100%{width: 0px;}
+
+}
+@keyframes nighty{
+    0%{height: 645px; background-color: #00000000;}
+    50%{height: 645px;}
+    75%{height: 645px;}
+    100%{height: 0px;}
+}
+
 
  .top{
     background-color:#f4faa4 ;
  }
  .left{
     background-color:#4a32a1 ;
+    color: white;
+
  } 
  .right{
     background-color:#fcdb81 ;
  }  
  .bottom{
     background-color:#c76fe2 ;
+    color: white;
  }
-.work:hover{
-    animation:redi 4s forwards
-}
-@keyframes redi{
-0%{
+
+ .commute:hover{
+    background-color: orange;
+ }
+.work:hover{    
     background-color:#dd6550 ;
 }
-25%{
-    background-color: #cecdff;
-}
-}
-.fuel:hover{
-    animation: fuel 4s forwards
-}
-@keyframes fuel{
-0%{
+.fuel:hover{    
     background-color:#8ffc81 ;
 }
-25%{
-    background-color: #cecdff;
-}
+.break:hover{
+    background-color: #1c3a18;
 }
 .nap:hover{
-    animation: nap 4s forwards
-}
-@keyframes nap{
-0%{
     background-color:#00ffff ;
 }
-25%{
-    background-color: #cecdff;
+.other:hover{
+    animation: other 4s forwards;background-color: gainsboro;
 }
-}
-.left:hover{
+.night:hover{
     animation: night 0.5s infinite
 }
 @keyframes night{
@@ -123,27 +225,135 @@ main{
     background-size: cover;
 }
 }
-tr{
-    font-weight: bold;
+
+
+
+.container {
+    display: none;
+    margin: auto;
+    width: 300px;
+    height: 200px;
+    background-color: #f4faa4 ;
+    padding: 0 0 0 10px;
+    position: absolute;
+    right: 200px;
+    top: 200px;
 }
-td, th, em{
-    font-size: 1.5vw;
-    border: 1px dashed white;
+.container label{   
+    color: #000000;
+    margin: 10px 0 0 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-th{
-    padding-left: 1.2vw;
-    padding-right: 1.2vw;
-    padding-bottom: 1vw;
-    padding-top: 1vw; 
+.container input[type=text] {
+    width: 250px;
+    height: 40px;
+    padding: 20px;
+    border: none;
+    background: #000000;
+    margin: 5px 0 0 0;
+    color:white;
 }
-.left , .right , .bottom, .top{
-    border: 2px solid;
-    padding-left: 1.2vw;
-    padding-right: 1.2vw;
-    padding-bottom: 1vw;
-    padding-top: 1vw;
+.container input[type=checkbox]{
+    margin: 10px 0 0 2px ;
+}
+.container input[type=text]:focus {
+  background-color: #000000;
+  outline: none;
+}
+.btn:hover{
+    opacity: 1;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+}
+.btn{
+    float: right;
+}
+
+
+
+.line{
+    height: 20px;
+    width: 687px;
+    margin: 0;
+    padding: 0;
+}
+.last{
+    width: 687px;
+}
+button{
+    height: 20px;
+    width: 20px;
+    background-color: #00000000;
+    border: none;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
-em{
-    color: rgba(240, 248, 255, 0);
+.nr{
+    font-size: 10px;
+    height: 20px;
+    width: 15px;
+    transform: translateY(-7px);
+    background-color: black;
+    color: white;
+ }
+.t{
+    font-size: 15px;
+    height: 20px;
+    width: 5px;
+    transform: translateY(-5.5px);
+    background-color: black;
+    color: white;
+}
+.mm{
+    height: 5px;
+}
+.mn{
+    height: 15px;
+}
+.edge{
+    width: 20px;
+}
+ .left.b.nr{
+    transform: rotate(0deg);
+    transform: translateY(-7px);
+}.left.b.t{
+    transform: rotate(0deg);
+    transform: translateY(-5.5px);
+}
+.right.t, .right.nr{
+    transform: rotate(90deg);
+}
+.left.nr,.left.t{
+    transform: rotate(-90deg);
+}
+.right.t{
+    transform-origin: 45% 10%;
+}
+.left.t{
+    transform-origin: 50% 15%;
+}
+.left.nr{
+    transform-origin: 45% 35%;
+}
+.right.nr{
+    transform-origin: 40% 30%;
+}
+.right{
+    float: right;
+}
+.right.space{
+    transform: translateX(3px);
+}
+.space1{
+    .right.space{
+        transform: translateX(-2px);
+    }
+}
+.space5,.space9,.space13,.space21,.space17{
+    .right.space{
+        transform: translateX(13px);
+    }
 }
