@@ -3,6 +3,28 @@ body{
     margin: 0;
     padding-top: 100px;
 }
+
+#onOff{
+    display: block;
+    position: absolute;
+    top:20px;
+    left: 455px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f80000;
+    cursor: pointer;
+    box-shadow: 2px 4px #2b0e0e;
+}
+#onOff:active{
+    background-color: #f80000;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+#onOff:hover{
+    background-color: #f80000;
+}
+
 #cIndex{
     position: absolute;
     color: #ffffff;
@@ -34,14 +56,8 @@ body{
     border: 3px solid white;
 }
 em{
-    font-size: 11px;
-    float: right;
+    font-size: 9px;
     width: 90px;
-    position: absolute;
-    text-align: left;
-    right: -39px;
-    left: 80px;
-    bottom: 2px;
 }
 .titleio{
     text-align: center;
@@ -209,7 +225,7 @@ em{
 .clicki{
     bottom: 10px;
     left: 230px;
-    font-size: 15px;
+    font-size: 11.9px;
     font-weight: bold;
     width: 130px;
     text-align: justify;
@@ -439,6 +455,8 @@ em{
     background-color: #c300ff;    
 /*     width: 660px;*/
     left: 25px;    
+    transform-origin: right center;
+
 }
 #night{
     width:10px;
@@ -446,6 +464,7 @@ em{
     left: 0;
     top: 25px;
     background-color: #00027a;    
+    transform-origin: center bottom;
 } 
 
 .time1{
@@ -508,6 +527,97 @@ background-color: #5900ff;
     50%{height: 645px;}
     75%{height: 645px;}
     100%{height: 0px;}
+}
+
+#workOnAm{
+    position: absolute;
+    width: 315px;
+    height: 20px;
+    top: 10px;
+    right: 30px;
+    background-color: #ee3a1ac2;
+    display: none;
+}
+#breakAm{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 190px;
+    background-color: #2a7421e8;
+    display: none;
+}
+#workOnPm{
+    position: absolute;
+    width:20px ;
+    height: 315px;
+    top: 140px;
+    right: 10px;
+    background-color: #ee3a1ac2;
+    display: none;
+}
+#breakPm{
+    position: absolute;
+    width:20px ;
+    height: 20px;
+    top: 275px;
+    right: 10px;
+    background-color: #2a7421e8;
+    display: none;
+}
+#lunch{
+    position: absolute;
+    width:20px ;
+    height: 95px;
+    top: 30px;
+    right: 10px;
+    background-color: #8ffc81be;
+    display: none;
+}
+#breakfast{
+    position: absolute;
+    width: 105px;
+    height:20px ;
+    top: 10px;
+    left: 105px;
+    background-color: #8ffc81be;
+    display: none;
+}
+#commute{
+    position: absolute;
+    width: 45px;
+    height:20px ;
+    top: 10px;
+    left: 300px;
+    background-color: #e98629be;
+    display: none;
+}
+#commuteFrom{
+    position: absolute;
+    width:20px ;
+    height: 45px;
+    top: 470px;
+    right:10px;
+    background-color: #e98629be;
+    display: none;
+}
+#dinner{
+    position: absolute;
+    width:20px ;
+    height: 95px;
+    top: 580px;
+    right: 10px;
+    background-color: #8ffc81be;
+    display: none;
+}
+#nap{
+    position: absolute;
+    width: 95px;
+    height:20px ;
+    bottom: 10px;
+    right: 30px;
+    background-color: #35c6ffbe;
+    display: none;
 }
 
 

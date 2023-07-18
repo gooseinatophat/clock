@@ -28,6 +28,33 @@ function closeSleep(){document.getElementById("sleepSlot").style.display="none";
 function openOther(){document.getElementById("otherSlot").style.display="block";}
 function closeOther(){document.getElementById("otherSlot").style.display="none";}
 
+function turnOn(){
+document.getElementById("workOnAm").style.display="block";
+document.getElementById("workOnPm").style.display="block";
+document.getElementById("lunch").style.display="block";
+document.getElementById("breakfast").style.display="block";
+document.getElementById("commute").style.display="block";
+document.getElementById("commuteFrom").style.display="block";
+document.getElementById("dinner").style.display="block";
+document.getElementById("nap").style.display="block";
+document.getElementById("breakAm").style.display="block";
+document.getElementById("breakPm").style.display="block";
+}
+
+function turnOff(){
+document.getElementById("workOnAm").style.display="none";
+document.getElementById("workOnPm").style.display="none";
+document.getElementById("lunch").style.display="none";
+document.getElementById("breakfast").style.display="none";
+document.getElementById("commute").style.display="none";
+document.getElementById("commuteFrom").style.display="none";
+document.getElementById("dinner").style.display="none";
+document.getElementById("nap").style.display="none";
+document.getElementById("breakAm").style.display="none";
+document.getElementById("breakPm").style.display="none";
+}
+
+
 let s= 0;
 let min= 0;
 let h=0;

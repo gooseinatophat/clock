@@ -8,6 +8,8 @@
   </head>
   <body>
     
+    <button id="onOff" onclick="turnOn()" ondblclick="turnOff()"></button> 
+
     <div id="time"></div>
 
     <button id="cIndex" title="info" onclick="openInfo()" ondblclick="closeInfo()">i</button>
@@ -22,7 +24,6 @@
       <div  id="eve"></div>
       <div  id="night"></div>
     
-   
       <div class="barrier">
         <div id="iForm">
           <button type="button" class="btn cancel" onclick="closeInfo()">X</button>
@@ -35,10 +36,10 @@
           <div class="infolino it15"><button class="top t">⍿</button></div>
           <div class="infolino it30"><button class="top t">·</button></div>
           <div class="infolino it45"><button class="top t">⍿</button></div>
-          <div class="infolino wrt_t"> hours in the 24h format </div>
-          <div class="infolino wrt_t15"> 15 minutes past the hour</div>
-          <div class="infolino wrt_t30"> 30 minutes past the hour</div>
-          <div class="infolino wrt_t45">45 minutes past the hour</div>
+          <div class="infolino wrt_t"> hour in 24h format </div>
+          <div class="infolino wrt_t15"> 15 min past </div>
+          <div class="infolino wrt_t30"> 30 min past </div>
+          <div class="infolino wrt_t45">45 min past </div>
           <div class="infolino hoveri"> hover over for: </div>
           <div class="infolino wrki"></div><div class="infolino wrt_w">Work</div><br>
           <div class="infolino brki"></div><div class="infolino wrt_c">Commute</div><br> 
@@ -47,7 +48,7 @@
           <div class="infolino npi"></div><div class="infolino wrt_o">Open</div><br>     
           <div class="infolino othi"></div><div class="infolino wrt_n">Nap</div><br>     
           <div class="infolino sli"></div><div class="infolino wrt_s">Sleep</div><br>     
-          <div class="infolino clicki">...or click on any time slot to open its description.<em>(dbl-click to close)</em></div>
+          <div class="infolino clicki">...or click on any time slot to open its description. <br> <em>(dbl-click to close)</em></div>
 
         </div>
       
@@ -300,6 +301,18 @@
       ><button class="bottom  edge nr">18</button>
     </div></div>
   </main>
+
+  <div id="workOnAm"></div>
+  <div id="workOnPm"></div>
+  <div id="lunch"></div>
+  <div id="breakfast"></div>
+  <div id="commute"></div>
+  <div id="commuteFrom"></div>
+  <div id="dinner"></div>
+  <div id="nap"></div>
+  <div id="breakAm"></div>
+  <div id="breakPm"></div>
+
   <script src="script.js"></script>  
   </body>
 </html>
