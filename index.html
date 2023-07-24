@@ -7,9 +7,25 @@
     <title>Clock</title>
   </head>
   <body>
-    
-    <button id="onOff" onclick="turnOn()" ondblclick="turnOff()"></button> 
-
+   
+    <div class="menu-container">
+      <button class="menu-toggle" onclick="toggleMenu()">▼</button>
+      <div class="menu">        
+        <div class="mold b1" title="morning"><button class="morningbtn" onclick="morning()"></button></div>
+        <div class="mold b2" title="4h work day"><button class="btn4hwd" onclick="fourHwd()"></button></div>
+        <div class="mold b3" title="5h work day"><button class="btn5hwd" onclick="fiveHwd()"></button></div>
+        <div class="mold b4" title="6h work day"><button class="btn6hwd" onclick="sixHwd()"></button></div><br>
+        <div class="mold b5" title="evening"><button class="eveningbtn" onclick="evening()"></button></div>
+        <div class="mold b7" title="water after 14:00"><button class="wa2" onclick="waterATwo()"></button></div>
+        <div class="mold b8" title="water after 15:00"><button class="wa3" onclick="waterAThree()"></button></div>
+        <div class="mold b9" title="water after 16:00"><button class="wa4" onclick="waterAFour()"></button></div><br>
+        <div class="mold b10" title="rest"><button class="smth" onclick="something()"></button></div>
+        <div class="mold b6" title="2h errand at 14:00"><button class="errandbtn4" onclick="errandsA()"></button></div>
+        <div class="mold b6" title="2h errand at 14:00"><button class="errandbtn5" onclick="errandsB()"></button></div>
+        <div class="mold b6" title="2h errand at 14:00"><button class="errandbtn6" onclick="errandsC()"></button></div>
+      </div>
+    </div>
+   
     <div id="time"></div>
 
     <button id="cIndex" title="info" onclick="openInfo()" ondblclick="closeInfo()">i</button>
@@ -103,8 +119,8 @@
       ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button
       ><button class="top nr ">10</button
       ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button><button class="top t">⍿</button
-      ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button><button class="top t">·</button
-      ><button class="top break space" title="break" onclick="openBreak()" ondblclick="closeBreak()"></button><button class="top t">⍿</button
+      ><button class="top break space" title="break" onclick="openWork()" ondblclick="closeWork()"></button><button class="top t">·</button
+      ><button class="top work space" title="work" onclick="openBreak()" ondblclick="closeBreak()"></button><button class="top t">⍿</button
       ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button
       ><button class="top nr ">11</button
       ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button><button class="top t">⍿</button
@@ -302,16 +318,65 @@
     </div></div>
   </main>
 
+  <div id="errands4" title="errands"></div>
+  <div id="errands5" title="errands"></div>
+  <div id="errands6" title="errands"></div>
+  <div id="lakeOrRiver4"></div>
+  <div id="lakeOrRiver5"></div>
+  <div id="lakeOrRiver6"></div>
+  
+  <div id="breakfast"></div>
+  
   <div id="workOnAm"></div>
   <div id="workOnPm"></div>
+  <div id="workOnPmFive"></div>
+  <div id="workOnPmSix"></div>
+  
   <div id="lunch"></div>
-  <div id="breakfast"></div>
-  <div id="commute"></div>
-  <div id="commuteFrom"></div>
-  <div id="dinner"></div>
-  <div id="nap"></div>
+  <div id="lunchC"></div>  
+  
   <div id="breakAm"></div>
   <div id="breakPm"></div>
+  
+  <div id="sensoryRestThree"></div>
+  <div id="sensoryRestFour"></div>
+  <div id="sensoryRestFive"></div>
+  <div id="sensoryRestSix"></div>
+  
+  <div id="snack"></div>
+  <div id="nap"></div>
+  <div id="lateDinner"></div>
+  
+  <div id="commute"></div>
+
+  <div id="commuteThree"></div>
+  <div id="commuteFour"></div>
+  <div id="commuteFive"></div>
+  <div id="commuteSix"></div>
+
+  <div id="commuteToW"></div>  
+  <div id="commuteW"></div>  
+  <div id="commuteToE"></div>  
+  <div id="commuteE4"></div>  
+  <div id="commuteE5"></div>  
+  <div id="commuteE6"></div>  
+  
+  <div id="exercise"></div>
+
+  <div id="meditateA"></div>
+  <div id="journalA"></div>
+  <div id="meditateB"></div>
+  <div id="journalB"></div>
+  <div id="meditateC"></div>
+  <div id="journalC"></div>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
 
   <script src="script.js"></script>  
   </body>
