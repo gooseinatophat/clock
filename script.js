@@ -41,11 +41,16 @@ function toggleMenu(){
 
 function something(){
   const bSlide = document.querySelector('.smth');
-  bSlide.classList.toggle('open');
-
-  var cMMs = document.querySelectorAll('.commute');
-  cMMs.forEach(function(element){element.classList.toggle('hover-style');});
+  const barrier = document.querySelector('.barrier'); 
+  const timeSquare = document.querySelector('.timesquare');
   
+  bSlide.classList.toggle('open');
+  barrier.classList.toggle('open');
+  timeSquare.classList.toggle('open');
+ 
+  if(bSlide.classList.contains('open')){document.body.style.backgroundColor="#000000";}
+  else{document.body.style.backgroundColor="#acacac";}
+ 
 }
 
 function morning(){
@@ -153,9 +158,9 @@ function errandsA(){
   document.getElementById("meditateA").style.display="none";}
   else {document.getElementById("errands4").style.display="none";
   document.getElementById("commuteE4").style.display="none";
-  document.getElementById("sensoryRestFour").style.display="block";
+  /* document.getElementById("sensoryRestFour").style.display="block";
   document.getElementById("journalA").style.display="block";
-  document.getElementById("meditateA").style.display="block";}
+  document.getElementById("meditateA").style.display="block"; */}
 }
 function errandsB(){
   const bSlide = document.querySelector('.errandbtn5');
@@ -169,9 +174,9 @@ function errandsB(){
   document.getElementById("meditateB").style.display="none";}
   else {document.getElementById("errands5").style.display="none";
   document.getElementById("commuteE5").style.display="none";
-  document.getElementById("sensoryRestFive").style.display="block";
+  /* document.getElementById("sensoryRestFive").style.display="block";
   document.getElementById("journalB").style.display="block";
-  document.getElementById("meditateB").style.display="block";}
+  document.getElementById("meditateB").style.display="block"; */}
 }
 function errandsC(){
   const bSlide = document.querySelector('.errandbtn6');
@@ -185,9 +190,9 @@ function errandsC(){
   document.getElementById("meditateC").style.display="none";}
   else {document.getElementById("errands6").style.display="none";
   document.getElementById("commuteE6").style.display="none";
-  document.getElementById("sensoryRestSix").style.display="block";
+ /*  document.getElementById("sensoryRestSix").style.display="block";
   document.getElementById("journalC").style.display="block";
-  document.getElementById("meditateC").style.display="block";}
+  document.getElementById("meditateC").style.display="block"; */}
 }
 function waterATwo(){
   const bSlide = document.querySelector('.wa2');
@@ -201,9 +206,9 @@ function waterATwo(){
   document.getElementById("meditateA").style.display="none";} 
   else { document.getElementById("lakeOrRiver4").style.display="none";
   document.getElementById("commuteW").style.display="none";
-  document.getElementById("sensoryRestFour").style.display="block";
+ /*  document.getElementById("sensoryRestFour").style.display="block";
   document.getElementById("journalA").style.display="block";
-  document.getElementById("meditateA").style.display="block";}
+  document.getElementById("meditateA").style.display="block"; */}
 }
 function waterAThree(){
   const bSlide = document.querySelector('.wa3');
@@ -217,9 +222,9 @@ function waterAThree(){
   document.getElementById("meditateB").style.display="none";} 
   else { document.getElementById("lakeOrRiver5").style.display="none";
   document.getElementById("commuteW").style.display="none";
-  document.getElementById("sensoryRestFive").style.display="block";
+  /* document.getElementById("sensoryRestFive").style.display="block";
   document.getElementById("journalB").style.display="block";
-  document.getElementById("meditateB").style.display="block";}
+  document.getElementById("meditateB").style.display="block"; */}
 }
 function waterAFour(){
   const bSlide = document.querySelector('.wa4');
@@ -231,9 +236,9 @@ function waterAFour(){
   document.getElementById("journalC").style.display="none";
   document.getElementById("meditateC").style.display="none";}
   else { document.getElementById("lakeOrRiver6").style.display="none";
-  document.getElementById("sensoryRestSix").style.display="block";
+/*   document.getElementById("sensoryRestSix").style.display="block";
   document.getElementById("journalC").style.display="block";
-  document.getElementById("meditateC").style.display="block";}
+  document.getElementById("meditateC").style.display="block"; */}
 }
 
 let s= 0;
