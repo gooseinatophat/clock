@@ -1,5 +1,5 @@
 body{
-    background-color: #8282b6;
+    background-color: #acacac;
     padding-top: 100px;
     margin: 0;
 }
@@ -13,32 +13,33 @@ body{
     top: -200px;
     height: 100px;
     width: 100%;
-    background-color: #ebc8ff;
-    padding: 10px;
+    background-color: #888888;
+    padding: 10px 0px 10px 30px;
     box-sizing: border-box;
     transition: top 0.5s ease;
-    border: #c673f7 3px solid;
-}
+/*     border: #addbc2 3px solid;
+ */}
 .menu-toggle{
     position: fixed;
-    top: 0px;
-    right: 470px;
+    top: -29px;
+    right: 475px;
     z-index: 1;
-    color: #25f7b8;
+    color: #636363;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 40px;
     transition: top 0.5s ease;
 }
 .menu.open{
     top: -100px;
 }
 .menu-toggle.open{
-    top: 80px;
+    top:70px;
+    color: #b9b9b9;
 
 }
 .mold{
     background-color: #bbbbbb;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     border-radius: 45%;
     width: 30px;
     height: 15px;
@@ -50,7 +51,7 @@ body{
 }
 .morningbtn{
     border-radius: 50%;
-    background-color: #3b3b3b;
+    background-color: #000000;
     width: 11px;
     height: 11px;
     position: relative;
@@ -67,7 +68,7 @@ body{
 }
 .eveningbtn{
     border-radius: 50%;
-    background-color: #3b3b3b;
+    background-color: #000000;
     width: 11px;
     height: 11px;
     position: relative;
@@ -81,11 +82,11 @@ body{
     left: 18px;
 }
 .b2,.b3,.b4{
-    background-color: #dda26a;
+    background-color: #fcd277;
 }
 .wa2{
     border-radius: 50%;
-    background-color: #3b3b3b;
+    background-color: #0e289b;
     width: 11px;
     height: 11px;
     position: relative;
@@ -99,11 +100,11 @@ body{
     left: 18px;
 }
 .b6{
-    background-color: #ff0095;
+    background-color: #d198b9;
 }
 .errandbtn4{
     border-radius: 50%;
-    background-color: #3b3b3b;
+    background-color: #c44073;
     width: 11px;
     height: 11px;
     position: relative;
@@ -118,7 +119,7 @@ body{
 }
 .errandbtn5{
     border-radius: 50%;
-    background-color: #3b3b3b;
+    background-color: #c44073;
     width: 11px;
     height: 11px;
     position: relative;
@@ -133,7 +134,7 @@ body{
 }
 .errandbtn6{
     border-radius: 50%;
-    background-color: #3b3b3b;
+    background-color: #c44073;
     width: 11px;
     height: 11px;
     position: relative;
@@ -147,11 +148,11 @@ body{
     left: 18px;
 }
 .b7,.b8,.b9{
-    background-color: #008383;
+    background-color: #b0e6e6;
 }
 .wa4{
     border-radius: 50%;
-    background-color: #3b3b3b;
+    background-color: #0e289b;
     width: 11px;
     height: 11px;
     position: relative;
@@ -166,7 +167,7 @@ body{
 }
 .btn4hwd{
     border-radius: 50%;
-    background-color: #3b3b3b;
+    background-color: #000000;
     width: 11px;
     height: 11px;
     position: relative;
@@ -181,7 +182,7 @@ body{
 }
 .btn5hwd{
     border-radius: 50%;
-    background-color: #3b3b3b;
+    background-color: #000000;
     width: 11px;
     height: 11px;
     position: relative;
@@ -196,7 +197,7 @@ body{
 }
 .btn6hwd{
     border-radius: 50%;
-    background-color: #3b3b3b;
+    background-color: #000000;
     width: 11px;
     height: 11px;
     position: relative;
@@ -211,7 +212,7 @@ body{
 }
 .wa3{
     border-radius: 50%;
-    background-color: #3b3b3b;
+    background-color: #0e289b;
     width: 11px;
     height: 11px;
     position: relative;
@@ -225,21 +226,22 @@ body{
     left: 18px;
 }
 .b10{
-    background-color: #00ffff;
+    background-color: #5130ac;
 }
 .smth{
     border-radius: 50%;
-    background-color: #3b3b3b;
     width: 11px;
     height: 11px;
     position: relative;
     top: -1px;
     left: 2px;
     cursor: pointer;
+    background-color: #ffe865;
     transition: left 0.3s ease;
 }
 .smth.open{
     left: 18px;
+    background-color: #ffffff;
 }
 
 
@@ -586,7 +588,7 @@ em{
     width: 685px;
     height: 685px;
     margin: auto;
-    background-color: #ff81a7;
+    background-color: #8b8b8b;
     box-sizing: border-box;
     position: relative;
 }
@@ -604,49 +606,9 @@ em{
     height: 705px;
     margin: auto;
     padding: 10px;
-    background-color: #8d9e7e;
+    background-color: #dbdbdb;
     box-sizing: border-box;
     position: relative;
-}
-.start{
-    font-size: 10px;
-    color:#ffffff;
-    background-color: #000000;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-}
-.noon{
-    font-size: 10px;
-    color:#ffffff;
-    background-color: #5f5e5e;
-    top: 0;
-    right: 0;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-}
-.midpm{
-    font-size: 10px;
-    color:#ffffff;
-    background-color: #5f5e5e;
-    bottom: 0;
-    right: 0;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-}
-.am{
-    font-size: 10px;
-    color:#ffffff;
-    background-color: #5f5e5e;
-    bottom: 0;
-    left: 0;
-    width: 25px;
-    height: 25px;
-    position: absolute;
 }
  #night, #eve, #noon, #morning{
     position: absolute;
@@ -656,23 +618,23 @@ em{
 }
 #morning{
     top: 0;
-    background-color: #fffb00;
+    background-color: #fffd72;
     height: 10px;
 /*     width: 660px;*/    
-    left: 25px;
+    left: 10px;
 }
 #noon{
     width:10px;
 /*     height: 660px;*/    
     right: 0;
-    top: 25px;
-    background-color: #ff7b00;       
+    top: 10px;
+    background-color: #ffc06e;       
 }
 #eve{
     bottom: 0;
-    background-color: #c300ff;    
+    background-color: #e17eff;    
 /*     width: 660px;*/
-    left: 25px;    
+    right: 10px;    
     transform-origin: right center;
 
 }
@@ -680,8 +642,8 @@ em{
     width:10px;
 /*     height: 660px;*/
     left: 0;
-    top: 25px;
-    background-color: #00027a;    
+    bottom: 10px;
+    background-color: #4420a8;    
     transform-origin: center bottom;
 } 
 
@@ -701,7 +663,7 @@ width: 2.5px;
 position: absolute;
 top: 20px;
 right:20px;
-background-color: #ff6600;
+background-color: #ffc06e;
 }
 .time3{
 animation: eve 4s infinite ;
@@ -710,7 +672,7 @@ height: 2.5px;
 position: absolute;
 bottom: 20px;
 left:20px;
-background-color: #a200ff;
+background-color: #da6dfc;
 }
 .time4{
 animation: nighty 4s infinite;
@@ -728,7 +690,7 @@ background-color: #5900ff;
 }
 @keyframes noon{
     0%{height: 0px;}    
-    25%{height: 0px; background-color: #ff6600;}
+    25%{height: 0px; background-color: #ffc06e;}
     50%{height: 645px;}
     100%{background-color: #00000000;}
 
@@ -1128,6 +1090,10 @@ background-color: #5900ff;
     background-color: #ffa500;
     cursor: pointer;
  }
+ .hover-style:hover{
+    background-color: #ffa500;
+    cursor: pointer;
+ }
 .work:hover{    
     background-color:#dd6550;    cursor: pointer;
 
@@ -1279,7 +1245,7 @@ button{
     transform: rotate(-90deg);
 }
 .right.t{
-    transform-origin: 45% 10%;
+    transform-origin: 35% 5%;
 }
 .left.t{
     transform-origin: 50% 15%;
@@ -1288,7 +1254,7 @@ button{
     transform-origin: 45% 35%;
 }
 .right.nr{
-    transform-origin: 40% 30%;
+    transform-origin: 45% 30%;
 }
 .right{
     float: right;

@@ -9,20 +9,20 @@
   <body>
    
     <div class="menu-container">
-      <button class="menu-toggle" onclick="toggleMenu()">▼</button>
+      <button class="menu-toggle" onclick="toggleMenu()">⯋</button>
       <div class="menu">        
         <div class="mold b1" title="morning"><button class="morningbtn" onclick="morning()"></button></div>
         <div class="mold b2" title="4h work day"><button class="btn4hwd" onclick="fourHwd()"></button></div>
         <div class="mold b3" title="5h work day"><button class="btn5hwd" onclick="fiveHwd()"></button></div>
         <div class="mold b4" title="6h work day"><button class="btn6hwd" onclick="sixHwd()"></button></div><br>
         <div class="mold b5" title="evening"><button class="eveningbtn" onclick="evening()"></button></div>
+        <div class="mold b6" title="running errands"><button class="errandbtn4" onclick="errandsA()"></button></div>
+        <div class="mold b6" title="running errands"><button class="errandbtn5" onclick="errandsB()"></button></div>
+        <div class="mold b6" title="running errands"><button class="errandbtn6" onclick="errandsC()"></button></div><br>
+        <div class="mold b10" title="display"><button class="smth" onclick="something()"></button></div>
         <div class="mold b7" title="water after 14:00"><button class="wa2" onclick="waterATwo()"></button></div>
         <div class="mold b8" title="water after 15:00"><button class="wa3" onclick="waterAThree()"></button></div>
-        <div class="mold b9" title="water after 16:00"><button class="wa4" onclick="waterAFour()"></button></div><br>
-        <div class="mold b10" title="rest"><button class="smth" onclick="something()"></button></div>
-        <div class="mold b6" title="2h errand at 14:00"><button class="errandbtn4" onclick="errandsA()"></button></div>
-        <div class="mold b6" title="2h errand at 14:00"><button class="errandbtn5" onclick="errandsB()"></button></div>
-        <div class="mold b6" title="2h errand at 14:00"><button class="errandbtn6" onclick="errandsC()"></button></div>
+        <div class="mold b9" title="water after 16:00"><button class="wa4" onclick="waterAFour()"></button></div>
       </div>
     </div>
    
@@ -30,11 +30,7 @@
 
     <button id="cIndex" title="info" onclick="openInfo()" ondblclick="closeInfo()">i</button>
     <div class="timesquare">
-      <div class="start">start</div>
-      <div class="noon"></div>
-      <div class="midpm"></div>
-      <div class="am"></div>
-
+  
       <div  id="morning"></div>
       <div  id="noon"></div>
       <div  id="eve"></div>
@@ -101,13 +97,13 @@
     
     <div class="line zero">
       <button class="top edge nr" onclick="openForm()" ondblclick="closeForm()">06</button
-      ><button class="top space other" onclick="openDescript()" ondblclick="closeIt()"></button><button class="top t">⍿</button
+      ><button class="top other space" onclick="openDescript()" ondblclick="closeIt()"></button><button class="top t">⍿</button
+      ><button class="top other space" onclick="openDescript()" ondblclick="closeIt()"></button><button class="top t">·</button
+      ><button class="top fuel space" title="breakfast" onclick="openFuel()" ondblclick="closeFuel()"></button><button class="top t">⍿</button
+      ><button class="top fuel space" title="breakfast" onclick="openFuel()" ondblclick="closeFuel()"></button><button class="top nr">07</button
+      ><button class="top other space" onclick="openDescript()" ondblclick="closeIt()"></button><button class="top t">⍿</button
       ><button class="top other space" onclick="openDescript()" ondblclick="closeIt()"></button><button class="top t">·</button
       ><button class="top other space" onclick="openDescript()" ondblclick="closeIt()"></button><button class="top t">⍿</button
-      ><button class="top fuel space" title="breakfast" onclick="openFuel()" ondblclick="closeFuel()"></button><button class="top nr">07</button
-      ><button class="top fuel space" title="breakfast" onclick="openFuel()" ondblclick="closeFuel()"></button><button class="top t">⍿</button
-      ><button class="top fuel space" title="breakfast" onclick="openFuel()" ondblclick="closeFuel()"></button><button class="top t">·</button
-      ><button class="top fuel space" title="breakfast" onclick="openFuel()" ondblclick="closeFuel()"></button><button class="top t">⍿</button
       ><button class="top other space" onclick="openOther()" ondblclick="closeOther()"></button><button class="top nr">08</button
       ><button class="top other space" onclick="openOther()" ondblclick="closeOther()"></button><button class="top t">⍿</button
       ><button class="top other space" onclick="openOther()" ondblclick="closeOther()"></button><button class="top t">·</button
@@ -268,8 +264,7 @@
       <button class="left t">⍿</button><button class="right  t">⍿</button>
     </div>
     <div class="line space24">
-      <button class="left  night space" title="sleep" onclick="openSleep()" ondblclick="closeSleep()"></button
-      ><button class="right fuel space" title="dinner" onclick="openFuel()" ondblclick="closeFuel()"></button>
+      <button class="left  night space" title="sleep" onclick="openSleep()" ondblclick="closeSleep()"></button><button class="right other space" onclick="openOther()" ondblclick="closeOther()"></button>
     </div>
     <div class="line last">
       <button class="left b edge nr">00</button

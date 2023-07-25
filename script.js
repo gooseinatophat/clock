@@ -35,8 +35,17 @@ function toggleMenu(){
   menuToggle.classList.toggle('open');
 
   if (menu.classList.contains('open'))
-  {menuToggle.textContent = '⌃';} 
-  else {menuToggle.textContent = '▼';}
+  {menuToggle.textContent = '⯊';} 
+  else {menuToggle.textContent = '⯋';}
+}
+
+function something(){
+  const bSlide = document.querySelector('.smth');
+  bSlide.classList.toggle('open');
+
+  var cMMs = document.querySelectorAll('.commute');
+  cMMs.forEach(function(element){element.classList.toggle('hover-style');});
+  
 }
 
 function morning(){
@@ -139,9 +148,14 @@ function errandsA(){
   if (bSlide.classList.contains('open'))
   {document.getElementById("errands4").style.display="block";
   document.getElementById("commuteE4").style.display="block";
-  document.getElementById("sensoryRestFour").style.display="none";}
+  document.getElementById("sensoryRestFour").style.display="none";
+  document.getElementById("journalA").style.display="none";
+  document.getElementById("meditateA").style.display="none";}
   else {document.getElementById("errands4").style.display="none";
-  document.getElementById("commuteE4").style.display="none";}
+  document.getElementById("commuteE4").style.display="none";
+  document.getElementById("sensoryRestFour").style.display="block";
+  document.getElementById("journalA").style.display="block";
+  document.getElementById("meditateA").style.display="block";}
 }
 function errandsB(){
   const bSlide = document.querySelector('.errandbtn5');
@@ -150,9 +164,14 @@ function errandsB(){
   if (bSlide.classList.contains('open'))
   {document.getElementById("errands5").style.display="block";
   document.getElementById("commuteE5").style.display="block";
-  document.getElementById("sensoryRestFive").style.display="none";}
+  document.getElementById("sensoryRestFive").style.display="none";
+  document.getElementById("journalB").style.display="none";
+  document.getElementById("meditateB").style.display="none";}
   else {document.getElementById("errands5").style.display="none";
-  document.getElementById("commuteE5").style.display="none";}
+  document.getElementById("commuteE5").style.display="none";
+  document.getElementById("sensoryRestFive").style.display="block";
+  document.getElementById("journalB").style.display="block";
+  document.getElementById("meditateB").style.display="block";}
 }
 function errandsC(){
   const bSlide = document.querySelector('.errandbtn6');
@@ -161,9 +180,14 @@ function errandsC(){
   if (bSlide.classList.contains('open'))
   {document.getElementById("errands6").style.display="block";
   document.getElementById("commuteE6").style.display="block";
-  document.getElementById("sensoryRestSix").style.display="none";}
+  document.getElementById("sensoryRestSix").style.display="none";
+  document.getElementById("journalC").style.display="none";
+  document.getElementById("meditateC").style.display="none";}
   else {document.getElementById("errands6").style.display="none";
-  document.getElementById("commuteE6").style.display="none";}
+  document.getElementById("commuteE6").style.display="none";
+  document.getElementById("sensoryRestSix").style.display="block";
+  document.getElementById("journalC").style.display="block";
+  document.getElementById("meditateC").style.display="block";}
 }
 function waterATwo(){
   const bSlide = document.querySelector('.wa2');
@@ -171,11 +195,15 @@ function waterATwo(){
 
   if (bSlide.classList.contains('open'))
   { document.getElementById("lakeOrRiver4").style.display="block";
-  document.getElementById("commuteToW").style.display="block";
-  document.getElementById("commuteW").style.display="block";} 
+  document.getElementById("commuteW").style.display="block";
+  document.getElementById("sensoryRestFour").style.display="none";
+  document.getElementById("journalA").style.display="none";
+  document.getElementById("meditateA").style.display="none";} 
   else { document.getElementById("lakeOrRiver4").style.display="none";
-  document.getElementById("commuteToW").style.display="none";
-  document.getElementById("commuteW").style.display="none";}
+  document.getElementById("commuteW").style.display="none";
+  document.getElementById("sensoryRestFour").style.display="block";
+  document.getElementById("journalA").style.display="block";
+  document.getElementById("meditateA").style.display="block";}
 }
 function waterAThree(){
   const bSlide = document.querySelector('.wa3');
@@ -183,28 +211,30 @@ function waterAThree(){
 
   if (bSlide.classList.contains('open'))
   { document.getElementById("lakeOrRiver5").style.display="block";
-  document.getElementById("commuteW").style.display="block";} 
+  document.getElementById("commuteW").style.display="block";
+  document.getElementById("sensoryRestFive").style.display="none";
+  document.getElementById("journalB").style.display="none";
+  document.getElementById("meditateB").style.display="none";} 
   else { document.getElementById("lakeOrRiver5").style.display="none";
-  document.getElementById("commuteW").style.display="none";}
+  document.getElementById("commuteW").style.display="none";
+  document.getElementById("sensoryRestFive").style.display="block";
+  document.getElementById("journalB").style.display="block";
+  document.getElementById("meditateB").style.display="block";}
 }
 function waterAFour(){
   const bSlide = document.querySelector('.wa4');
   bSlide.classList.toggle('open');
 
   if (bSlide.classList.contains('open'))
-  {document.getElementById("lakeOrRiver6").style.display="block";}
-  else { document.getElementById("lakeOrRiver6").style.display="none";}
+  {document.getElementById("lakeOrRiver6").style.display="block";
+  document.getElementById("sensoryRestSix").style.display="none";
+  document.getElementById("journalC").style.display="none";
+  document.getElementById("meditateC").style.display="none";}
+  else { document.getElementById("lakeOrRiver6").style.display="none";
+  document.getElementById("sensoryRestSix").style.display="block";
+  document.getElementById("journalC").style.display="block";
+  document.getElementById("meditateC").style.display="block";}
 }
-
-function something(){
-  const bSlide = document.querySelector('.smth');
-  bSlide.classList.toggle('open');
-
-  if (bSlide.classList.contains('open'))
-  {} 
-  else {}
-}
-
 
 let s= 0;
 let min= 0;
@@ -221,14 +251,15 @@ setInterval(
     um=27.5;
     uh=um*4;
     ut=um/15;
-    document.getElementById("morning").style.width= min/15*um + uh*(h-6) + "px";
-    document.getElementById("noon").style.height=  min/15*um + uh*(h-12)  + "px";    
-    document.getElementById("eve").style.width=  min/15*um + uh*(h-18)  + "px";
-    document.getElementById("night").style.height=  min/15*um + uh*(h-24) + "px";
+    document.getElementById("morning").style.width= min/15*um + uh*(h-6) +15+ "px";
+    document.getElementById("noon").style.height=  min/15*um + uh*(h-12)  +15+ "px";    
+    document.getElementById("eve").style.width=  min/15*um + uh*(h-18)  +15+ "px";
+    document.getElementById("night").style.height=  min/15*um + uh*(h-24) +15+ "px";
     document.getElementById("seconds").innerHTML= d.getSeconds();
     document.getElementById("time").innerHTML= h + ":" + min;
-    if (h > 11){document.getElementById("morning").style.width="660px";};
-    if (h > 17){document.getElementById("noon").style.height="660px";};
-    if (h > 23){document.getElementById("eve").style.width="660px";};
+    if (h > 11){document.getElementById("morning").style.width="695px";};
+    if (h > 17){document.getElementById("noon").style.height="695px";};
+    if (h > 23){document.getElementById("eve").style.width="695px";};
+    if (h > 5){document.getElementById("night").style.height="695px";};
   },100
 );
