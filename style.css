@@ -1,6 +1,6 @@
 body{
     background-color: #acacac;
-    padding-top: 100px;
+    padding:  100px 0px;
     margin: 0;
 }
 
@@ -14,14 +14,14 @@ body{
     height: 100px;
     width: 100%;
     background-color: #888888;
-    padding: 10px 0px 10px 30px;
+    padding: 10px 0px 10px 20%;
     box-sizing: border-box;
     transition: top 0.5s ease;
 }
 .menu-toggle{
     position: fixed;
-    top: -29px;
-    right: 475px;
+    top: -15px;
+    left: 49%;
     z-index: 1;
     color: #636363;
     cursor: pointer;
@@ -32,9 +32,10 @@ body{
     top: -100px;
 }
 .menu-toggle.open{
-    top:70px;
+    top:-30px;
     color: #b9b9b9;
-
+    position: absolute;
+    transition: top 0.9s ease;
 }
 .mold{
     background-color: #bbbbbb;
@@ -590,6 +591,7 @@ em{
     background-color: #8b8b8b;
     box-sizing: border-box;
     position: relative;
+    cursor: pointer;
 }
 .barrier.open{
     background-color: #303030;
@@ -598,11 +600,17 @@ em{
 #seconds{
     position: absolute;
     color: #ffffff;
-    background-color: #000000;
-    bottom: 30px;
-    left: 30px;
+    background-color: #00000059;
+    border-radius: 50%;
+    top: 65px;
+    right: 25px;
     font-size: 10px;
     display: block;
+    opacity: 0.5;
+}
+#seconds:hover{
+    cursor: pointer;
+    opacity: 2;
 }
 .timesquare{
     width: 705px;
@@ -623,35 +631,75 @@ em{
     width: 0px;
 }
 #morning{
-    top: 0;
-    background-color: #fffd72;
-    height: 10px;
+    top: 5px;
+    background-color: #00000075;
+    height: 5px;
 /*     width: 660px;*/    
     left: 10px;
 }
 #noon{
-    width:10px;
+    width:5px;
 /*     height: 660px;*/    
-    right: 0;
+    right: 5px;
     top: 10px;
-    background-color: #ffc06e;       
+    background-color: #00000075;       
 }
 #eve{
-    bottom: 0;
-    background-color: #e17eff;    
+    bottom: 5px;
+    height: 5px;
+    background-color: #00000075;    
 /*     width: 660px;*/
     right: 10px;    
     transform-origin: right center;
 
 }
 #night{
-    width:10px;
+    width:5px;
 /*     height: 660px;*/
-    left: 0;
+    left: 5px;
     bottom: 10px;
-    background-color: #4420a8;    
+    background-color: #00000075;    
     transform-origin: center bottom;
 } 
+
+#morningD{
+    top: 0;
+    background-color: #f8f79b;
+    height: 10px;
+    width: 695px;    
+    left: 10px;
+    position: absolute;
+    display: block;
+}
+#noonD{
+    width:10px;
+    height: 695px;    
+    right: 0;
+    top: 10px;
+    background-color: #ffd782;   
+    position: absolute;
+    display: block;    
+}
+#eveD{
+    bottom: 0;
+    background-color: #d6a2e6;    
+    width: 695px;
+    height: 10px;
+    right: 10px;    
+    position: absolute;
+    display: block;
+
+}
+#nightD{
+    width:10px;
+    height: 695px;
+    left: 0;
+    bottom: 10px;
+    background-color: #5d4aa1;    
+    position: absolute;
+    display: block;
+} 
+
 
 .time1{
 animation: morning 4s infinite;
@@ -660,7 +708,7 @@ height: 2.5px;
 position: absolute;
 top: 20px;
 left:20px;
-background-color: #fffb00;
+background-color: #f8f79b;
 }
 .time2{
 animation: noon 4s infinite ;
@@ -669,7 +717,7 @@ width: 2.5px;
 position: absolute;
 top: 20px;
 right:20px;
-background-color: #ffc06e;
+background-color: #ffd782;
 }
 .time3{
 animation: eve 4s infinite ;
@@ -678,7 +726,7 @@ height: 2.5px;
 position: absolute;
 bottom: 20px;
 left:20px;
-background-color: #da6dfc;
+background-color: #d6a2e6;
 }
 .time4{
 animation: nighty 4s infinite;
@@ -687,7 +735,7 @@ width: 2.5px;
 position: absolute;
 top: 20px;
 left:20px;
-background-color: #5900ff;
+background-color: #5d4aa1;
 }
 @keyframes morning{
     0%{width: 0px;}
@@ -696,7 +744,7 @@ background-color: #5900ff;
 }
 @keyframes noon{
     0%{height: 0px;}    
-    25%{height: 0px; background-color: #ffc06e;}
+    25%{height: 0px; background-color: #ffd782;}
     50%{height: 645px;}
     100%{background-color: #00000000;}
 
@@ -1080,7 +1128,7 @@ background-color: #5900ff;
     background-color:#f4faa4 ;
  }
  .left{
-    background-color:#4a32a1 ;
+    background-color:#5d4aa1 ;
     color: white;
 
  } 
@@ -1088,37 +1136,52 @@ background-color: #5900ff;
     background-color:#fcdb81 ;
  }  
  .bottom{
-    background-color:#c76fe2 ;
+    background-color:#d6a2e6 ;
     color: white;
  }
 
- .commute:hover{
+.commute:hover{
     background-color: #ffa500;
     cursor: pointer;
  }
+.commute.open{
+    background-color: #ffa500;
+ }
 .work:hover{    
     background-color:#dd6550;    cursor: pointer;
-
+}
+.work.open{    
+    background-color:#dd6550;   
 }
 .fuel:hover{    
     background-color:#8ffc81 ;    cursor: pointer;
-
+}
+.fuel.open{    
+    background-color:#8ffc81 ;   
 }
 .break:hover{
     background-color: #1c3a18;    cursor: pointer;
-
+}
+.break.open{
+    background-color: #1c3a18;
 }
 .nap:hover{
     background-color:#00ffff ;    cursor: pointer;
-
+}
+.nap.open{
+    background-color:#00ffff ; 
 }
 .other:hover{
-    animation: other 4s forwards;background-color: gainsboro;    cursor: pointer;
-
+    background-color: gainsboro;    cursor: pointer;
+}
+.other.open{
+    background-color: gainsboro;   
 }
 .night:hover{
     animation: night 0.5s infinite;    cursor: pointer;
-
+}
+.night.open{
+    background-color: #0e1d3a; 
 }
 @keyframes night{
 0%{
@@ -1238,7 +1301,11 @@ button{
     transform: translateY(-7px);
 }.left.b.t{
     transform: rotate(0deg);
-    transform: translateY(-5.5px);
+    transform: translateY(-5px);
+}
+.left.b.tt{
+    transform: rotate(0deg);
+    transform: translateY(-6px);
 }
 .right.t, .right.nr{
     transform: rotate(90deg);
@@ -1263,6 +1330,9 @@ button{
 }
 .right.space{
     transform: translateX(3px);
+}
+.bottom.tt{
+    transform: translateY(-6px);
 }
 .space1{
     .right.space{

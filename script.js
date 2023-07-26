@@ -35,8 +35,26 @@ function toggleMenu(){
   menuToggle.classList.toggle('open');
 
   if (menu.classList.contains('open'))
-  {menuToggle.textContent = '⯊';} 
-  else {menuToggle.textContent = '⯋';}
+  {menuToggle.textContent = '^'} 
+  else {menuToggle.textContent = 'v';}
+}
+
+function displayer(){
+  const wrk = document.querySelectorAll('.timesquare .barrier .line .work');
+  const opn = document.querySelectorAll('.other.space');
+  const fl = document.querySelectorAll('.fuel.space');
+  const np = document.querySelectorAll('.nap.space');
+  const cmm = document.querySelectorAll('.commute.space');
+  const brk = document.querySelectorAll('.break.space');
+  const slp = document.querySelectorAll('.night.space');
+
+  wrk.forEach(wrks => { wrks.classList.toggle('open'); });
+  opn.forEach(opns => { opns.classList.toggle('open'); });
+  fl.forEach(fls => { fls.classList.toggle('open'); });
+  np.forEach(nps => { nps.classList.toggle('open'); });
+  cmm.forEach(cmms => { cmms.classList.toggle('open'); });
+  brk.forEach(brks => { brks.classList.toggle('open'); });
+  slp.forEach(slps => { slps.classList.toggle('open'); });
 }
 
 function something(){
@@ -262,9 +280,9 @@ setInterval(
     document.getElementById("night").style.height=  min/15*um + uh*(h-24) +15+ "px";
     document.getElementById("seconds").innerHTML= d.getSeconds();
     document.getElementById("time").innerHTML= h + ":" + min;
-    if (h > 11){document.getElementById("morning").style.width="695px";};
-    if (h > 17){document.getElementById("noon").style.height="695px";};
-    if (h > 23){document.getElementById("eve").style.width="695px";};
-    if (h > 5){document.getElementById("night").style.height="695px";};
+    if (h > 11){document.getElementById("morning").style.width="690px";};
+    if (h > 17){document.getElementById("noon").style.height="690px";};
+    if (h > 23){document.getElementById("eve").style.width="690px";};
+    if (h > 5){document.getElementById("night").style.height="690px";};
   },100
 );
