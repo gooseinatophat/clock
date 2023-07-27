@@ -1,32 +1,13 @@
-function openForm() {document.getElementById("myForm").style.display = "block";}
-function closeForm() {document.getElementById("myForm").style.display = "none";}
+function openInfo() {document.getElementById("iForm").classList.toggle('open');}
 
-function openInfo() {document.getElementById("iForm").style.display = "block";}
-function closeInfo() {document.getElementById("iForm").style.display = "none";}
-
-function openDescript(){document.getElementById("slot").style.display="block";}
-function closeIt(){document.getElementById("slot").style.display="none";}
-
-function openWork(){document.getElementById("workSlot").style.display="block";}
-function closeWork(){document.getElementById("workSlot").style.display="none";}
-
-function openFuel(){document.getElementById("fuelSlot").style.display="block";}
-function closeFuel(){document.getElementById("fuelSlot").style.display="none";}
-
-function openBreak(){document.getElementById("breakSlot").style.display="block";}
-function closeBreak(){document.getElementById("breakSlot").style.display="none";}
-
-function openCommute(){document.getElementById("commuteSlot").style.display="block";}
-function closeCommute(){document.getElementById("commuteSlot").style.display="none";}
-
-function openNap(){document.getElementById("napSlot").style.display="block";}
-function closeNap(){document.getElementById("napSlot").style.display="none";}
-
-function openSleep(){document.getElementById("sleepSlot").style.display="block";}
-function closeSleep(){document.getElementById("sleepSlot").style.display="none";}
-
-function openOther(){document.getElementById("otherSlot").style.display="block";}
-function closeOther(){document.getElementById("otherSlot").style.display="none";}
+function openDescript(){document.getElementById("slot").classList.toggle('open');}
+function openWork(){document.getElementById("workSlot").classList.toggle('open');}
+function openFuel(){document.getElementById("fuelSlot").classList.toggle('open');}
+function openBreak(){document.getElementById("breakSlot").classList.toggle('open');}
+function openCommute(){document.getElementById("commuteSlot").classList.toggle('open');}
+function openNap(){document.getElementById("napSlot").classList.toggle('open');}
+function openSleep(){document.getElementById("sleepSlot").classList.toggle('open');}
+function openOther(){document.getElementById("otherSlot").classList.toggle('open');}
 
 function toggleMenu(){
   const menuToggle = document.querySelector('.menu-toggle');
@@ -35,8 +16,8 @@ function toggleMenu(){
   menuToggle.classList.toggle('open');
 
   if (menu.classList.contains('open'))
-  {menuToggle.textContent = '^'} 
-  else {menuToggle.textContent = 'v';}
+  {menuToggle.textContent = ''} 
+  else {menuToggle.textContent = '';}
 }
 
 function displayer(){

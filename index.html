@@ -9,28 +9,46 @@
   <body>
    
     <div class="menu-container">
-      <button class="menu-toggle" onclick="toggleMenu()">v</button>
-      <div class="menu">        
-        <div class="mold b1" title="morning"><button class="morningbtn" onclick="morning()"></button></div>
-        <div class="mold b2" title="4h work day"><button class="btn4hwd" onclick="fourHwd()"></button></div>
-        <div class="mold b3" title="5h work day"><button class="btn5hwd" onclick="fiveHwd()"></button></div>
-        <div class="mold b4" title="6h work day"><button class="btn6hwd" onclick="sixHwd()"></button></div><br>
-        <div class="mold b5" title="evening"><button class="eveningbtn" onclick="evening()"></button></div>
-        <div class="mold b6" title="running errands"><button class="errandbtn4" onclick="errandsA()"></button></div>
-        <div class="mold b6" title="running errands"><button class="errandbtn5" onclick="errandsB()"></button></div>
-        <div class="mold b6" title="running errands"><button class="errandbtn6" onclick="errandsC()"></button></div><br>
-        <div class="mold b10" title="dark mode"><button class="smth" onclick="something()"></button></div>
-        <div class="mold b7" title="water after 14:00"><button class="wa2" onclick="waterATwo()"></button></div>
-        <div class="mold b8" title="water after 15:00"><button class="wa3" onclick="waterAThree()"></button></div>
-        <div class="mold b9" title="water after 16:00"><button class="wa4" onclick="waterAFour()"></button></div>
+      <button class="menu-toggle" onclick="toggleMenu()"></button>
+      <div class="menu">      
+
+        <div>
+
+          <div>
+            <div class="mold b1" title="morning"><button class="morningbtn" onclick="morning()"></button></div>
+            <div class="mold b2" title="4h work day"><button class="btn4hwd" onclick="fourHwd()"></button></div>
+            <div class="mold b3" title="5h work day"><button class="btn5hwd" onclick="fiveHwd()"></button></div>
+            <div class="mold b4" title="6h work day"><button class="btn6hwd" onclick="sixHwd()"></button></div>
+          </div>  
+
+          <div>
+            <div class="mold b5" title="evening"><button class="eveningbtn" onclick="evening()"></button></div>
+            <div class="mold b6" title="running errands"><button class="errandbtn4" onclick="errandsA()"></button></div>
+            <div class="mold b6" title="running errands"><button class="errandbtn5" onclick="errandsB()"></button></div>
+            <div class="mold b6" title="running errands"><button class="errandbtn6" onclick="errandsC()"></button></div>
+          </div>
+       
+          <div>
+            <div class="mold b10" title="dark mode"><button class="smth" onclick="something()"></button></div>
+            <div class="mold b7" title="water after 14:00"><button class="wa2" onclick="waterATwo()"></button></div>
+            <div class="mold b8" title="water after 15:00"><button class="wa3" onclick="waterAThree()"></button></div>
+            <div class="mold b9" title="water after 16:00"><button class="wa4" onclick="waterAFour()"></button></div>
+          </div>
+        
+        </div>
+       
+       <div>
+          <div id="time"></div><button id="seconds"></button>
+        </div>
+
       </div>
     </div>
    
-    <div id="time"></div>
+    
 
-    <button id="seconds"></button>
+    
 
-    <button id="cIndex" title="info" onclick="openInfo()" ondblclick="closeInfo()">i</button>
+    <button id="cIndex" title="info" onclick="openInfo()">i</button>
     
     <div class="timesquare">
       
@@ -47,9 +65,8 @@
       
       <div class="barrier" ondblclick="displayer()">
 
-        <div id="iForm">
+        <div id="iForm" onclick="openInfo() ">
 
-          <button type="button" class="btn cancel" onclick="closeInfo()">X</button>
           <div class="titleio">Info</div><br>
           <div class="infolino am1"><button class="top space iam1"></button>Morning</div><br>
           <div class="infolino am2"><button class="right space iam2"></button>Afternoon</div><br>
@@ -63,7 +80,7 @@
           <div class="infolino wrt_t15"> 15 min past </div>
           <div class="infolino wrt_t30"> 30 min past </div>
           <div class="infolino wrt_t45">45 min past </div>
-          <div class="infolino hoveri"> hover or dbl-click for: </div>
+          <div class="infolino hoveri"> hover or click for: </div>
           <div class="infolino wrki"></div><div class="infolino wrt_w">Work</div><br>
           <div class="infolino brki"></div><div class="infolino wrt_c">Commute</div><br> 
           <div class="infolino commi"></div><div class="infolino wrt_b">Breaks</div><br>
@@ -71,35 +88,19 @@
           <div class="infolino npi"></div><div class="infolino wrt_o">Open</div><br>     
           <div class="infolino othi"></div><div class="infolino wrt_n">Nap</div><br>     
           <div class="infolino sli"></div><div class="infolino wrt_s">Sleep</div><br>     
-          <div class="infolino clicki">...or click on any time slot to open its description. <br> <em>(dbl-click to close)</em></div>
+          <div class="infolino clicki">dbl-click for <br> FULL VIEW</div>
 
         </div>
       
-        <div id="slot" ondblclick="closeIt()">Rise and Shine</div>
-        <div id="workSlot" ondblclick="closeWork()">Work Hours</div>
-        <div id="fuelSlot" ondblclick="closeFuel()">Meal Time</div>
-        <div id="breakSlot" ondblclick="closeBreak()">Take a Break</div>
-        <div id="commuteSlot" ondblclick="closeCommute()">Commuting</div>
-        <div id="napSlot" ondblclick="closeNap()">take a nap</div>
-        <div id="sleepSlot" ondblclick="closeSleep()">Sleep Well</div>
-        <div id="otherSlot" ondblclick="closeOther()">Open Time Slot</div>
-
-        
-        <form action="/action_page.php" class="container" id="myForm">
-        <label for="notes">Good Morning</label>
-        <button type="button" class="btn cancel" onclick="closeForm()">X</button>
-        <input type="text" placeholder="dreamt of ..." name="notes" />
-        <input type="checkbox" id="box1" name="box1" value="good" />
-        <label for="box1">slept well</label><br />
-        <input
-        type="checkbox"
-        id="box2"
-        name="box2"
-        value="bad"/>
-        <label for="box2">sleep issues</label>
-       </form>
-
-    
+        <div id="slot" onclick="openDescript()">Rise and Shine</div>
+        <div id="workSlot" onclick="openWork()">Work Hours</div>
+        <div id="fuelSlot" onclick="openFuel()">Meal Time</div>
+        <div id="breakSlot" onclick="openBreak()">Take a Break</div>
+        <div id="commuteSlot" onclick="openCommute()">Commuting</div>
+        <div id="napSlot" onclick="openNap()">take a nap</div>
+        <div id="sleepSlot" onclick="openSleep()">Sleep Well</div>
+        <div id="otherSlot" onclick="openOther()">Open Time Slot</div>
+            
         <div class="time1"></div>
         <div class="time2"></div>
         <div class="time3"></div>
@@ -107,33 +108,33 @@
             
      
         <div class="line zero"> 
-          <button class="top edge nr" onclick="openForm()" ondblclick="closeForm()">06</button
-          ><button class="top other space" onclick="openDescript()" ondblclick="closeIt()"></button><button class="top t">⍿</button
-          ><button class="top other space" onclick="openDescript()" ondblclick="closeIt()"></button><button class="top t">·</button
-          ><button class="top fuel space" title="breakfast" onclick="openFuel()" ondblclick="closeFuel()"></button><button class="top t">⍿</button
-          ><button class="top fuel space" title="breakfast" onclick="openFuel()" ondblclick="closeFuel()"></button><button class="top nr">07</button
-          ><button class="top other space" onclick="openDescript()" ondblclick="closeIt()"></button><button class="top t">⍿</button
-          ><button class="top other space" onclick="openDescript()" ondblclick="closeIt()"></button><button class="top t">·</button
-          ><button class="top other space" onclick="openDescript()" ondblclick="closeIt()"></button><button class="top t">⍿</button
-          ><button class="top other space" onclick="openOther()" ondblclick="closeOther()"></button><button class="top nr">08</button
-          ><button class="top other space" onclick="openOther()" ondblclick="closeOther()"></button><button class="top t">⍿</button
-          ><button class="top other space" onclick="openOther()" ondblclick="closeOther()"></button><button class="top t">·</button
-          ><button class="top commute space" title="commute" onclick="openCommute()" ondblclick="closeCommute()"></button><button class="top t">⍿</button
-          ><button class="top commute space" title="commute" onclick="openCommute()" ondblclick="closeCommute()"></button><button class="top nr">09</button
-          ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button><button class="top t">⍿</button
-          ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button><button class="top t">·</button
-          ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button><button class="top t">⍿</button
-          ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button
+          <button class="top edge nr">06</button
+          ><button class="top other space" onclick="openDescript()"></button><button class="top t">⍿</button
+          ><button class="top other space" onclick="openDescript()"></button><button class="top t">·</button
+          ><button class="top fuel space" title="breakfast" onclick="openFuel()"></button><button class="top t">⍿</button
+          ><button class="top fuel space" title="breakfast" onclick="openFuel()"></button><button class="top nr">07</button
+          ><button class="top other space" onclick="openDescript()"></button><button class="top t">⍿</button
+          ><button class="top other space" onclick="openDescript()"></button><button class="top t">·</button
+          ><button class="top other space" onclick="openDescript()"></button><button class="top t">⍿</button
+          ><button class="top other space" onclick="openOther()"></button><button class="top nr">08</button
+          ><button class="top other space" onclick="openOther()"></button><button class="top t">⍿</button
+          ><button class="top other space" onclick="openOther()"></button><button class="top t">·</button
+          ><button class="top commute space" title="commute" onclick="openCommute()"></button><button class="top t">⍿</button
+          ><button class="top commute space" title="commute" onclick="openCommute()"></button><button class="top nr">09</button
+          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
+          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">·</button
+          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
+          ><button class="top work space" title="work" onclick="openWork()"></button
           ><button class="top nr ">10</button
-          ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button><button class="top t">⍿</button
-          ><button class="top break space" title="break" onclick="openWork()" ondblclick="closeWork()"></button><button class="top t">·</button
-          ><button class="top work space" title="work" onclick="openBreak()" ondblclick="closeBreak()"></button><button class="top t">⍿</button
-          ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button
+          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
+          ><button class="top break space" title="break" onclick="openBreak()"></button><button class="top t">·</button
+          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
+          ><button class="top work space" title="work" onclick="openWork()"></button
           ><button class="top nr ">11</button
-          ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button><button class="top t">⍿</button
-          ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button><button class="top t">·</button
-          ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button><button class="top t">⍿</button
-          ><button class="top work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button
+          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
+          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">·</button
+          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
+          ><button class="top work space" title="work" onclick="openWork()"></button
           ><button class="top edge nr">12</button>
         </div>
     
@@ -285,43 +286,43 @@
           ><button class="left  night space" title="sleep" onclick="openSleep()" ondblclick="closeSleep()"></button><button class="left b t tt">⍿</button
           ><button class="left  night space" title="sleep" onclick="openSleep()" ondblclick="closeSleep()"></button
           ><button class="left b  nr">23</button
-         ><button class="left  night space" title="sleep" onclick="openSleep()" ondblclick="closeSleep()"></button><button class="left b t tt">⍿</button
-         ><button class="left  night space" title="sleep" onclick="openSleep()" ondblclick="closeSleep()"></button><button class="left b t">·</button
-         ><button class="left  night space" title="sleep" onclick="openSleep()" ondblclick="closeSleep()"></button><button class="left b t tt">⍿</button
-         ><button class="left  night space" title="sleep" onclick="openSleep()" ondblclick="closeSleep()"></button
-         ><button class="left b  nr">22</button
-         ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
-         ><button class="bottom t tt">⍿</button
-         ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
-         ><button class="bottom  t">·</button
+          ><button class="left  night space" title="sleep" onclick="openSleep()" ondblclick="closeSleep()"></button><button class="left b t tt">⍿</button
+          ><button class="left  night space" title="sleep" onclick="openSleep()" ondblclick="closeSleep()"></button><button class="left b t">·</button
+          ><button class="left  night space" title="sleep" onclick="openSleep()" ondblclick="closeSleep()"></button><button class="left b t tt">⍿</button
+          ><button class="left  night space" title="sleep" onclick="openSleep()" ondblclick="closeSleep()"></button
+          ><button class="left b  nr">22</button
           ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
           ><button class="bottom t tt">⍿</button
-         ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
-         ><button class="bottom   nr">21</button
           ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
-         ><button class="bottom t tt">⍿</button
-         ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
           ><button class="bottom  t">·</button
           ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
-         ><button class="bottom t tt">⍿</button
+          ><button class="bottom t tt">⍿</button
+          ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
+          ><button class="bottom   nr">21</button
+          ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
+          ><button class="bottom t tt">⍿</button
+          ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
+          ><button class="bottom  t">·</button
+          ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
+          ><button class="bottom t tt">⍿</button
           ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
           ><button class="bottom   nr">20</button
-         ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
-         ><button class="bottom t tt">⍿</button
-         ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
+          ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
+          ><button class="bottom t tt">⍿</button
+          ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
           ><button class="bottom  t">·</button
-         ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
+          ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
           ><button class="bottom  t tt">⍿</button
-         ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
+          ><button class="bottom other space" onclick="openOther()" ondblclick="closeOther()"></button
           ><button class="bottom   nr">19</button
-         ><button class="bottom nap space" title="nap" onclick="openNap()" ondblclick="closeNap()"></button
-         ><button class="bottom t tt">⍿</button
           ><button class="bottom nap space" title="nap" onclick="openNap()" ondblclick="closeNap()"></button
-         ><button class="bottom t">·</button
-         ><button class="bottom nap space" title="nap" onclick="openNap()" ondblclick="closeNap()"></button
-         ><button class="bottom t tt">⍿</button
+          ><button class="bottom t tt">⍿</button
           ><button class="bottom nap space" title="nap" onclick="openNap()" ondblclick="closeNap()"></button
-         ><button class="bottom  edge nr">18</button>
+          ><button class="bottom t">·</button
+          ><button class="bottom nap space" title="nap" onclick="openNap()" ondblclick="closeNap()"></button
+          ><button class="bottom t tt">⍿</button
+          ><button class="bottom nap space" title="nap" onclick="openNap()" ondblclick="closeNap()"></button
+          ><button class="bottom  edge nr">18</button>
         </div>
       </div>
     
