@@ -35,8 +35,6 @@ body{
 .menu-container{
     position: relative;
     display: flex;
-    width: 100%;
-    margin: auto;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -45,13 +43,12 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    /* align-items: center ;
-    align-content: center; */
     position: absolute;
     left: 0px;
+    min-width: 710px;
+    width: 100%;
     top: -200px;
     height: 100px;
-    width: 100%;
     background-color: #888888;
     padding: 10px 10px;
     box-sizing: border-box;
@@ -832,7 +829,7 @@ background-color: #5d4aa1;
     height: 20px;
     top: 10px;
     right: 30px;
-    background-color: #ee3a1ac2;
+    background-color: #ec715bc2;
     display: none;
 }
 #breakAm{
@@ -841,7 +838,7 @@ background-color: #5d4aa1;
     height: 20px;
     top: 10px;
     right: 190px;
-    background-color: #2a7421e8;
+    background-color: #1c3a18;
     display: none;
 }
 #workOnPm{
@@ -850,7 +847,7 @@ background-color: #5d4aa1;
     height: 95px;
     top: 140px;
     right: 10px;
-    background-color: #ee3a1ac2;
+    background-color: #ec715bc2;
     display: none;
 }
 #workOnPmFive{
@@ -859,7 +856,7 @@ background-color: #5d4aa1;
     height: 205px;
     top: 140px;
     right: 10px;
-    background-color: #ee3a1ac2;
+    background-color: #ec715bc2;
     display: none;
 }
 #workOnPmSix{
@@ -868,7 +865,7 @@ background-color: #5d4aa1;
     height: 315px;
     top: 140px;
     right: 10px;
-    background-color: #ee3a1ac2;
+    background-color: #ec715bc2;
     display: none;
 }
 #breakPm{
@@ -877,7 +874,7 @@ background-color: #5d4aa1;
     height: 20px;
     top: 275px;
     right: 10px;
-    background-color: #2a7421e8;
+    background-color: #1c3a18;
     display: none;
 }
 #breakfast{
@@ -886,7 +883,7 @@ background-color: #5d4aa1;
     height:20px ;
     top: 10px;
     left: 55px;
-    background-color: #8ffc81be;
+    background-color: #75d169c2;
     display: none;
 }
 #lunch{
@@ -895,7 +892,7 @@ background-color: #5d4aa1;
     height: 95px;
     top: 30px;
     right: 10px;
-    background-color: #8ffc81be;
+    background-color: #75d169c2;
     display: none;
 }
 #lunchC{
@@ -904,16 +901,16 @@ background-color: #5d4aa1;
     height: 105px;
     top: 105px;
     right: 10px;
-    background-color: #8ffc81be;
+    background-color: #75d169c2;
     display: none;
 }
 #snack{
     position: absolute;
     width:20px ;
-    height: 50px;
-    top: 600px;
+    height: 45px;
+    top: 605px;
     right: 10px;
-    background-color: #1b6611be;
+    background-color: #1c3a18;
     display: none;
 }
 #lateDinner{
@@ -922,7 +919,7 @@ background-color: #5d4aa1;
     width: 95px;
     bottom: 10px;
     right: 140px;
-    background-color: #8ffc81be;
+    background-color: #75d169c2;
     display: none;
 }
 #nap{
@@ -931,7 +928,7 @@ background-color: #5d4aa1;
     height:20px ;
     bottom: 10px;
     right: 30px;
-    background-color: #35c6ffbe;
+    background-color: #39b1b1ce;
     display: none;
 }
 #sensoryRestThree{
@@ -940,7 +937,7 @@ background-color: #5d4aa1;
     width:20px ;
     top: 215px;
     right: 10px;
-    background-color: #35c6ffbe;
+    background-color: #39b1b1ce;
     display: none;
 }
 #sensoryRestFour{
@@ -949,7 +946,7 @@ background-color: #5d4aa1;
     width:20px ;
     top: 325px;
     right: 10px;
-    background-color: #35c6ffbe;
+    background-color: #39b1b1ce;
     display: none;
 }
 #sensoryRestFive{
@@ -958,7 +955,7 @@ background-color: #5d4aa1;
     width:20px ;
     top: 435px;
     right: 10px;
-    background-color: #35c6ffbe;
+    background-color: #39b1b1ce;
     display: none;
 }
 #sensoryRestSix{
@@ -967,7 +964,7 @@ background-color: #5d4aa1;
     width:20px ;
     top: 545px;
     right: 10px;
-    background-color: #35c6ffbe;
+    background-color: #39b1b1ce;
     display: none;
 }
 #lakeOrRiver4{
@@ -976,7 +973,7 @@ background-color: #5d4aa1;
     width:20px ;
     top: 320px;
     right: 10px;
-    background-color: #019999ce;
+    background-color: #0a4949ce;
     display: none;
 }
 #lakeOrRiver5{
@@ -985,7 +982,7 @@ background-color: #5d4aa1;
     width:20px ;
     top: 470px;
     right: 10px;
-    background-color: #019999ce;
+    background-color: #0a4949ce;
     display: none;
 }
 #lakeOrRiver6{
@@ -994,7 +991,7 @@ background-color: #5d4aa1;
     width:20px;
     top: 580px;
     right: 10px;
-    background-color: #019999ce;
+    background-color: #0a4949ce;
     display: none;
 }
 #errands4{
@@ -1030,7 +1027,7 @@ background-color: #5d4aa1;
     height:20px ;
     top: 10px;
     left: 300px;
-    background-color: #e98629be;
+    background-color: #f0a661be;
     display: none;
 }
 #commuteToE{
@@ -1039,7 +1036,7 @@ background-color: #5d4aa1;
     height: 45px;
     top: 250px;
     right:10px;
-    background-color: #e98629be;
+    background-color: #f0a661be;
     display: none;
 }
 #commuteE4{
@@ -1048,7 +1045,7 @@ background-color: #5d4aa1;
     height: 45px;
     top: 520px;
     right:10px;
-    background-color: #e98629be;
+    background-color: #f0a661be;
     display: none;
 }
 #commuteE5{
@@ -1057,7 +1054,7 @@ background-color: #5d4aa1;
     height: 45px;
     top: 630px;
     right:10px;
-    background-color: #e98629be;
+    background-color: #f0a661be;
     display: none;
 }
 #commuteE6{
@@ -1066,7 +1063,7 @@ background-color: #5d4aa1;
     width: 45px;
     top: 675px;
     right:30px;
-    background-color: #e98629be;
+    background-color: #f0a661be;
     display: none;
 }
 #commuteToW{
@@ -1075,7 +1072,7 @@ background-color: #5d4aa1;
     height: 45px;
     bottom: 410px;
     right:10px;
-    background-color: #e98629be;
+    background-color: #f0a661be;
     display: none;
 }
 #commuteW{
@@ -1084,7 +1081,7 @@ background-color: #5d4aa1;
     width: 45px;
     bottom: 10px;
     right:30px;
-    background-color: #e98629be;
+    background-color: #f0a661be;
     display: none;
 }
 #commuteThree{
@@ -1093,7 +1090,7 @@ background-color: #5d4aa1;
     height: 45px;
     top: 30px;
     right:10px;
-    background-color: #e98629be;
+    background-color: #f0a661be;
     display: none;
 }
 #commuteFour{
@@ -1102,7 +1099,7 @@ background-color: #5d4aa1;
     height: 45px;
     top: 250px;
     right:10px;
-    background-color: #e98629be;
+    background-color: #f0a661be;
     display: none;
 }
 #commuteFive{
@@ -1111,7 +1108,7 @@ background-color: #5d4aa1;
     height: 45px;
     top: 360px;
     right:10px;
-    background-color: #e98629be;
+    background-color: #f0a661be;
     display: none;
 }
 #commuteSix{
@@ -1120,7 +1117,7 @@ background-color: #5d4aa1;
     height: 45px;
     top: 470px;
     right:10px;
-    background-color: #e98629be;
+    background-color: #f0a661be;
     display: none;
 }
 
@@ -1204,7 +1201,7 @@ background-color: #5d4aa1;
 .right{
     background-color:#fcdb81 ;
 }  
- .bottom{
+.bottom{
     background-color:#d6a2e6 ;
     color: white;
 }
@@ -1213,19 +1210,19 @@ background-color: #5d4aa1;
     cursor: pointer;
  }
 .commute.open{
-    background-color: #ffa500;
+    background-color: #f0a661;
  }
 .work:hover{    
     background-color:#dd6550;    cursor: pointer;
 }
 .work.open{    
-    background-color:#dd6550;   
+    background-color:#e06651;   
 }
 .fuel:hover{    
     background-color:#8ffc81 ;    cursor: pointer;
 }
 .fuel.open{    
-    background-color:#8ffc81 ;   
+    background-color:#75d169 ;   
 }
 .break:hover{
     background-color: #1c3a18;    cursor: pointer;
@@ -1237,7 +1234,7 @@ background-color: #5d4aa1;
     background-color:#00ffff ;    cursor: pointer;
 }
 .nap.open{
-    background-color:#00ffff ; 
+    background-color:#39b1b1 ; 
 }
 .other:hover{
     background-color: gainsboro;    cursor: pointer;
