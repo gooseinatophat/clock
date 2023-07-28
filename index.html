@@ -49,337 +49,337 @@
     
 
     <button id="cIndex" title="info" onclick="openInfo()">i</button>
+    <main>
+      <div class="timesquare">
+      
+        <div  id="morningD"></div>
+        <div  id="noonD"></div>
+        <div  id="eveD"></div>
+        <div  id="nightD"></div>
+        
+        <div  id="morning"></div>
+        <div  id="noon"></div>
+        <div  id="eve"></div>
+        <div  id="night"></div>
+  
+        
+        <div class="barrier" ondblclick="displayer()">
+  
+          <div id="iForm" onclick="openInfo() ">
+  
+            <div class="titleio">Info</div><br>
+            <div class="infolino am1"><button class="top space iam1"></button>Morning</div><br>
+            <div class="infolino am2"><button class="right space iam2"></button>Afternoon</div><br>
+            <div class="infolino pm1"><button class="bottom space ipm1"></button>Evening</div><br>
+            <div class="infolino pm2"><button class="left space ipm2"></button>Night</div><br>
+            <div class="infolino ih"><button class="top edge nr">00</button></div>
+            <div class="infolino it15"><button class="top t">⍿</button></div>
+            <div class="infolino it30"><button class="top t">·</button></div>
+            <div class="infolino it45"><button class="top t">⍿</button></div>
+            <div class="infolino wrt_t"> hour in 24h format </div>
+            <div class="infolino wrt_t15"> 15 min past </div>
+            <div class="infolino wrt_t30"> 30 min past </div>
+            <div class="infolino wrt_t45">45 min past </div>
+            <div class="infolino hoveri"> hover or click for: </div>
+            <div class="infolino wrki"></div><div class="infolino wrt_w">Work</div><br>
+            <div class="infolino brki"></div><div class="infolino wrt_c">Commute</div><br> 
+            <div class="infolino commi"></div><div class="infolino wrt_b">Breaks</div><br>
+            <div class="infolino fueli"></div><div class="infolino wrt_f">Food</div><br>     
+            <div class="infolino npi"></div><div class="infolino wrt_o">Open</div><br>     
+            <div class="infolino othi"></div><div class="infolino wrt_n">Nap</div><br>     
+            <div class="infolino sli"></div><div class="infolino wrt_s">Sleep</div><br>     
+            <div class="infolino clicki">dbl-click for <br> FULL VIEW</div>
+  
+          </div>
+        
+          <div id="slot" onclick="openDescript()">Rise and Shine</div>
+          <div id="workSlot" onclick="openWork()">Work Hours</div>
+          <div id="fuelSlot" onclick="openFuel()">Meal Time</div>
+          <div id="breakSlot" onclick="openBreak()">Take a Break</div>
+          <div id="commuteSlot" onclick="openCommute()">Commuting</div>
+          <div id="napSlot" onclick="openNap()">take a nap</div>
+          <div id="sleepSlot" onclick="openSleep()">Sleep Well</div>
+          <div id="otherSlot" onclick="openOther()">Open Time Slot</div>
+              
+          <div class="time1"></div>
+          <div class="time2"></div>
+          <div class="time3"></div>
+          <div class="time4"></div>
+              
+       
+          <div class="line zero"> 
+            <button class="top edge nr">06</button
+            ><button class="top other space" onclick="openDescript()"></button><button class="top t">⍿</button
+            ><button class="top other space" onclick="openDescript()"></button><button class="top t">·</button
+            ><button class="top fuel space" title="breakfast" onclick="openFuel()"></button><button class="top t">⍿</button
+            ><button class="top fuel space" title="breakfast" onclick="openFuel()"></button><button class="top nr">07</button
+            ><button class="top other space" onclick="openDescript()"></button><button class="top t">⍿</button
+            ><button class="top other space" onclick="openDescript()"></button><button class="top t">·</button
+            ><button class="top other space" onclick="openDescript()"></button><button class="top t">⍿</button
+            ><button class="top other space" onclick="openOther()"></button><button class="top nr">08</button
+            ><button class="top other space" onclick="openOther()"></button><button class="top t">⍿</button
+            ><button class="top other space" onclick="openOther()"></button><button class="top t">·</button
+            ><button class="top commute space" title="commute" onclick="openCommute()"></button><button class="top t">⍿</button
+            ><button class="top commute space" title="commute" onclick="openCommute()"></button><button class="top nr">09</button
+            ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
+            ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">·</button
+            ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
+            ><button class="top work space" title="work" onclick="openWork()"></button
+            ><button class="top nr ">10</button
+            ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
+            ><button class="top break space" title="break" onclick="openBreak()"></button><button class="top t">·</button
+            ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
+            ><button class="top work space" title="work" onclick="openWork()"></button
+            ><button class="top nr ">11</button
+            ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
+            ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">·</button
+            ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
+            ><button class="top work space" title="work" onclick="openWork()"></button
+            ><button class="top edge nr">12</button>
+          </div>
+      
+         <div class="line space1">
+            <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right fuel space" title="lunch" onclick="openFuel()" ondblclick="closeFuel()"></button>
+          </div>
+          <div class="line mm 1time">
+            <button class="left t">⍿</button><button class="right t">⍿</button>
+          </div>
+          <div class="line 2space">
+           <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right fuel space" title="lunch" onclick="openFuel()" ondblclick="closeFuel()"></button>
+          </div>
+          <div class="line mm 2time">
+            <button class="left t">·</button><button class="right t">·</button>
+         </div>
+          <div class="line 3space">
+            <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right fuel space" title="lunch" onclick="openFuel()" ondblclick="closeFuel()"></button>
+         </div>
+          <div class="line mm 3time">
+            <button class="left t">⍿</button><button class="right  t">⍿</button>
+          </div>
+          <div class="line 4space">
+           <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right fuel space" title="lunch" onclick="openFuel()" ondblclick="closeFuel()"></button>
+          </div>
+          <div class="line mn 4time">
+           <button class="left nr">05</button><button class="right  nr ">13</button>
+         </div>
+          <div class="line space5">
+            <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
+          </div>
+          <div class="line mm 5time">
+            <button class="left t">⍿</button><button class="right  t">⍿</button>
+         </div>
+          <div class="line 5space">
+           <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
+          </div>
+          <div class="line mm 6time">
+            <button class="left t">·</button><button class="right  t">·</button>
+          </div>
+          <div class="line 7space">
+           <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
+         </div>
+          <div class="line mm 7time">
+            <button class="left t">⍿</button><button class="right  t">⍿</button>
+          </div>
+          <div class="line 8space">
+            <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
+         </div>
+         <div class="line mn 8time">
+           <button class="left nr">04</button><button class="right   nr">14</button>
+         </div>
+         <div class="line space9">
+           <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
+         </div>
+          <div class="line mm 9time">
+           <button class="left t">⍿</button><button class="right  t">⍿</button>
+         </div>
+         <div class="line 10space">
+            <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right break space" title="break" onclick="openBreak()" ondblclick="closeBreak()"></button>
+         </div>
+         <div class="line mm 10time">
+           <button class="left t">·</button><button class="right  t">·</button>
+         </div>
+          <div class="line 11space">
+           <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
+         </div>
+         <div class="line mm 11time">
+           <button class="left t">⍿</button><button class="right  t">⍿</button>
+         </div>
+         <div class="line 12space">
+           <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
+          </div>
+          <div class="line mn 12time">
+           <button class="left nr">03</button><button class="right   nr">15</button>
+         </div>
+         <div class="line space13">
+            <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
+          </div>
+         <div class="line mm 13time">
+            <button class="left t">⍿</button><button class="right  t">⍿</button>
+          </div>
+          <div class="line 14space">
+            <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
+          </div>
+          <div class="line mm 14time">
+            <button class="left t">·</button><button class="right  t">·</button>
+          </div>
+          <div class="line 15space">
+            <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
+         </div>
+          <div class="line mm 15time">
+            <button class="left t">⍿</button><button class="right  t">⍿</button>
+          </div>
+          <div class="line 16space">
+           <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
+          </div>
+          <div class="line mn 16time">
+            <button class="left nr">02</button><button class="right   nr">16</button>
+         </div>
+          <div class="line space17">
+            <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right commute space" title="commute" onclick="openCommute()" ondblclick="closeCommute()"></button>
+          </div>
+         <div class="line mm 17time">
+           <button class="left t">⍿</button><button class="right  t">⍿</button>
+         </div>
+         <div class="line 18space">
+           <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right commute space" title="commute" onclick="openCommute()" ondblclick="closeCommute()"></button>
+         </div>
+          <div class="line mm 18time">
+            <button class="left t">·</button><button class="right  t">·</button>
+         </div>
+         <div class="line 19space">
+            <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right other space" onclick="openOther()" ondblclick="closeOther()"></button>
+         </div>
+         <div class="line mm 19time">
+           <button class="left t">⍿</button><button class="right  t">⍿</button>
+          </div>
+         <div class="line 20space">
+            <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right other space" onclick="openOther()" ondblclick="closeOther()"></button>
+         </div>
+         <div class="line mn 20time">
+            <button class="left nr">01</button><button class="right   nr">17</button>
+         </div>
+         <div class="line space21">
+            <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right other space" onclick="openOther()" ondblclick="closeOther()"></button>
+          </div>
+          <div class="line mm 21time">
+           <button class="left t">⍿</button><button class="right  t">⍿</button>
+          </div>
+          <div class="line 22space">
+            <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right fuel space" title="snack" onclick="openFuel()" ondblclick="closeFuel()"></button>
+          </div>
+         <div class="line mm 22time">
+           <button class="left t">·</button><button class="right  t">·</button>
+          </div>
+          <div class="line 23space">
+            <button class="left  night space" title="sleep" onclick="openSleep()"><button class="right fuel space" title="snack" onclick="openFuel()" ondblclick="closeFuel()"></button>
+          </div>
+         <div class="line mm 23time">
+            <button class="left t">⍿</button><button class="right  t">⍿</button>
+         </div>
+          <div class="line space24">
+           <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right other space" onclick="openOther()" ondblclick="closeOther()"></button>
+          </div>
+          <div class="line last">
+            <button class="left b edge nr">00</button
+            ><button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="left b t tt">⍿</button
+            ><button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="left b t">·</button
+            ><button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="left b t tt">⍿</button
+            ><button class="left  night space" title="sleep" onclick="openSleep()"></button
+            ><button class="left b  nr">23</button
+            ><button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="left b t tt">⍿</button
+            ><button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="left b t">·</button
+            ><button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="left b t tt">⍿</button
+            ><button class="left  night space" title="sleep" onclick="openSleep()"></button
+            ><button class="left b  nr">22</button
+            ><button class="bottom other space" onclick="openOther()"></button
+            ><button class="bottom t tt">⍿</button
+            ><button class="bottom other space" onclick="openOther()"></button
+            ><button class="bottom  t">·</button
+            ><button class="bottom other space" onclick="openOther()"></button
+            ><button class="bottom t tt">⍿</button
+            ><button class="bottom other space" onclick="openOther()"></button
+            ><button class="bottom   nr">21</button
+            ><button class="bottom other space" onclick="openOther()"></button
+            ><button class="bottom t tt">⍿</button
+            ><button class="bottom other space" onclick="openOther()"></button
+            ><button class="bottom  t">·</button
+            ><button class="bottom other space" onclick="openOther()"></button
+            ><button class="bottom t tt">⍿</button
+            ><button class="bottom other space" onclick="openOther()"></button
+            ><button class="bottom   nr">20</button
+            ><button class="bottom fuel space" title="dinner" onclick="openFuel()"></button
+            ><button class="bottom t tt">⍿</button
+            ><button class="bottom fuel space" title="dinner" onclick="openFuel()"></button
+            ><button class="bottom  t">·</button
+            ><button class="bottom fuel space" title="dinner" onclick="openFuel()"></button
+            ><button class="bottom  t tt">⍿</button
+            ><button class="bottom fuel space" title="dinner" onclick="openFuel()"></button
+            ><button class="bottom   nr">19</button
+            ><button class="bottom nap space" title="nap" onclick="openNap()"></button
+            ><button class="bottom t tt">⍿</button
+            ><button class="bottom nap space" title="nap" onclick="openNap()"></button
+            ><button class="bottom t">·</button
+            ><button class="bottom nap space" title="nap" onclick="openNap()"></button
+            ><button class="bottom t tt">⍿</button
+            ><button class="bottom nap space" title="nap" onclick="openNap()"></button
+            ><button class="bottom  edge nr">18</button>
+          </div>
+        </div>
+      
+        <div id="errands4" title="errands"></div>
+        <div id="errands5" title="errands"></div>
+        <div id="errands6" title="errands"></div>
+        <div id="lakeOrRiver4"></div>
+        <div id="lakeOrRiver5"></div>
+        <div id="lakeOrRiver6"></div>
     
-    <div class="timesquare">
-      
-      <div  id="morningD"></div>
-      <div  id="noonD"></div>
-      <div  id="eveD"></div>
-      <div  id="nightD"></div>
-      
-      <div  id="morning"></div>
-      <div  id="noon"></div>
-      <div  id="eve"></div>
-      <div  id="night"></div>
-
-      
-      <div class="barrier" ondblclick="displayer()">
-
-        <div id="iForm" onclick="openInfo() ">
-
-          <div class="titleio">Info</div><br>
-          <div class="infolino am1"><button class="top space iam1"></button>Morning</div><br>
-          <div class="infolino am2"><button class="right space iam2"></button>Afternoon</div><br>
-          <div class="infolino pm1"><button class="bottom space ipm1"></button>Evening</div><br>
-          <div class="infolino pm2"><button class="left space ipm2"></button>Night</div><br>
-          <div class="infolino ih"><button class="top edge nr">00</button></div>
-          <div class="infolino it15"><button class="top t">⍿</button></div>
-          <div class="infolino it30"><button class="top t">·</button></div>
-          <div class="infolino it45"><button class="top t">⍿</button></div>
-          <div class="infolino wrt_t"> hour in 24h format </div>
-          <div class="infolino wrt_t15"> 15 min past </div>
-          <div class="infolino wrt_t30"> 30 min past </div>
-          <div class="infolino wrt_t45">45 min past </div>
-          <div class="infolino hoveri"> hover or click for: </div>
-          <div class="infolino wrki"></div><div class="infolino wrt_w">Work</div><br>
-          <div class="infolino brki"></div><div class="infolino wrt_c">Commute</div><br> 
-          <div class="infolino commi"></div><div class="infolino wrt_b">Breaks</div><br>
-          <div class="infolino fueli"></div><div class="infolino wrt_f">Food</div><br>     
-          <div class="infolino npi"></div><div class="infolino wrt_o">Open</div><br>     
-          <div class="infolino othi"></div><div class="infolino wrt_n">Nap</div><br>     
-          <div class="infolino sli"></div><div class="infolino wrt_s">Sleep</div><br>     
-          <div class="infolino clicki">dbl-click for <br> FULL VIEW</div>
-
-        </div>
-      
-        <div id="slot" onclick="openDescript()">Rise and Shine</div>
-        <div id="workSlot" onclick="openWork()">Work Hours</div>
-        <div id="fuelSlot" onclick="openFuel()">Meal Time</div>
-        <div id="breakSlot" onclick="openBreak()">Take a Break</div>
-        <div id="commuteSlot" onclick="openCommute()">Commuting</div>
-        <div id="napSlot" onclick="openNap()">take a nap</div>
-        <div id="sleepSlot" onclick="openSleep()">Sleep Well</div>
-        <div id="otherSlot" onclick="openOther()">Open Time Slot</div>
-            
-        <div class="time1"></div>
-        <div class="time2"></div>
-        <div class="time3"></div>
-        <div class="time4"></div>
-            
-     
-        <div class="line zero"> 
-          <button class="top edge nr">06</button
-          ><button class="top other space" onclick="openDescript()"></button><button class="top t">⍿</button
-          ><button class="top other space" onclick="openDescript()"></button><button class="top t">·</button
-          ><button class="top fuel space" title="breakfast" onclick="openFuel()"></button><button class="top t">⍿</button
-          ><button class="top fuel space" title="breakfast" onclick="openFuel()"></button><button class="top nr">07</button
-          ><button class="top other space" onclick="openDescript()"></button><button class="top t">⍿</button
-          ><button class="top other space" onclick="openDescript()"></button><button class="top t">·</button
-          ><button class="top other space" onclick="openDescript()"></button><button class="top t">⍿</button
-          ><button class="top other space" onclick="openOther()"></button><button class="top nr">08</button
-          ><button class="top other space" onclick="openOther()"></button><button class="top t">⍿</button
-          ><button class="top other space" onclick="openOther()"></button><button class="top t">·</button
-          ><button class="top commute space" title="commute" onclick="openCommute()"></button><button class="top t">⍿</button
-          ><button class="top commute space" title="commute" onclick="openCommute()"></button><button class="top nr">09</button
-          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
-          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">·</button
-          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
-          ><button class="top work space" title="work" onclick="openWork()"></button
-          ><button class="top nr ">10</button
-          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
-          ><button class="top break space" title="break" onclick="openBreak()"></button><button class="top t">·</button
-          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
-          ><button class="top work space" title="work" onclick="openWork()"></button
-          ><button class="top nr ">11</button
-          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
-          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">·</button
-          ><button class="top work space" title="work" onclick="openWork()"></button><button class="top t">⍿</button
-          ><button class="top work space" title="work" onclick="openWork()"></button
-          ><button class="top edge nr">12</button>
-        </div>
+        <div id="breakfast"></div>
     
-       <div class="line space1">
-          <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right fuel space" title="lunch" onclick="openFuel()" ondblclick="closeFuel()"></button>
-        </div>
-        <div class="line mm 1time">
-          <button class="left t">⍿</button><button class="right t">⍿</button>
-        </div>
-        <div class="line 2space">
-         <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right fuel space" title="lunch" onclick="openFuel()" ondblclick="closeFuel()"></button>
-        </div>
-        <div class="line mm 2time">
-          <button class="left t">·</button><button class="right t">·</button>
-       </div>
-        <div class="line 3space">
-          <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right fuel space" title="lunch" onclick="openFuel()" ondblclick="closeFuel()"></button>
-       </div>
-        <div class="line mm 3time">
-          <button class="left t">⍿</button><button class="right  t">⍿</button>
-        </div>
-        <div class="line 4space">
-         <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right fuel space" title="lunch" onclick="openFuel()" ondblclick="closeFuel()"></button>
-        </div>
-        <div class="line mn 4time">
-         <button class="left nr">05</button><button class="right  nr ">13</button>
-       </div>
-        <div class="line space5">
-          <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
-        </div>
-        <div class="line mm 5time">
-          <button class="left t">⍿</button><button class="right  t">⍿</button>
-       </div>
-        <div class="line 5space">
-         <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
-        </div>
-        <div class="line mm 6time">
-          <button class="left t">·</button><button class="right  t">·</button>
-        </div>
-        <div class="line 7space">
-         <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
-       </div>
-        <div class="line mm 7time">
-          <button class="left t">⍿</button><button class="right  t">⍿</button>
-        </div>
-        <div class="line 8space">
-          <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
-       </div>
-       <div class="line mn 8time">
-         <button class="left nr">04</button><button class="right   nr">14</button>
-       </div>
-       <div class="line space9">
-         <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
-       </div>
-        <div class="line mm 9time">
-         <button class="left t">⍿</button><button class="right  t">⍿</button>
-       </div>
-       <div class="line 10space">
-          <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right break space" title="break" onclick="openBreak()" ondblclick="closeBreak()"></button>
-       </div>
-       <div class="line mm 10time">
-         <button class="left t">·</button><button class="right  t">·</button>
-       </div>
-        <div class="line 11space">
-         <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
-       </div>
-       <div class="line mm 11time">
-         <button class="left t">⍿</button><button class="right  t">⍿</button>
-       </div>
-       <div class="line 12space">
-         <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
-        </div>
-        <div class="line mn 12time">
-         <button class="left nr">03</button><button class="right   nr">15</button>
-       </div>
-       <div class="line space13">
-          <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
-        </div>
-       <div class="line mm 13time">
-          <button class="left t">⍿</button><button class="right  t">⍿</button>
-        </div>
-        <div class="line 14space">
-          <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
-        </div>
-        <div class="line mm 14time">
-          <button class="left t">·</button><button class="right  t">·</button>
-        </div>
-        <div class="line 15space">
-          <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
-       </div>
-        <div class="line mm 15time">
-          <button class="left t">⍿</button><button class="right  t">⍿</button>
-        </div>
-        <div class="line 16space">
-         <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right work space" title="work" onclick="openWork()" ondblclick="closeWork()"></button>
-        </div>
-        <div class="line mn 16time">
-          <button class="left nr">02</button><button class="right   nr">16</button>
-       </div>
-        <div class="line space17">
-          <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right commute space" title="commute" onclick="openCommute()" ondblclick="closeCommute()"></button>
-        </div>
-       <div class="line mm 17time">
-         <button class="left t">⍿</button><button class="right  t">⍿</button>
-       </div>
-       <div class="line 18space">
-         <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right commute space" title="commute" onclick="openCommute()" ondblclick="closeCommute()"></button>
-       </div>
-        <div class="line mm 18time">
-          <button class="left t">·</button><button class="right  t">·</button>
-       </div>
-       <div class="line 19space">
-          <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right other space" onclick="openOther()" ondblclick="closeOther()"></button>
-       </div>
-       <div class="line mm 19time">
-         <button class="left t">⍿</button><button class="right  t">⍿</button>
-        </div>
-       <div class="line 20space">
-          <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right other space" onclick="openOther()" ondblclick="closeOther()"></button>
-       </div>
-       <div class="line mn 20time">
-          <button class="left nr">01</button><button class="right   nr">17</button>
-       </div>
-       <div class="line space21">
-          <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right other space" onclick="openOther()" ondblclick="closeOther()"></button>
-        </div>
-        <div class="line mm 21time">
-         <button class="left t">⍿</button><button class="right  t">⍿</button>
-        </div>
-        <div class="line 22space">
-          <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right fuel space" title="snack" onclick="openFuel()" ondblclick="closeFuel()"></button>
-        </div>
-       <div class="line mm 22time">
-         <button class="left t">·</button><button class="right  t">·</button>
-        </div>
-        <div class="line 23space">
-          <button class="left  night space" title="sleep" onclick="openSleep()"><button class="right fuel space" title="snack" onclick="openFuel()" ondblclick="closeFuel()"></button>
-        </div>
-       <div class="line mm 23time">
-          <button class="left t">⍿</button><button class="right  t">⍿</button>
-       </div>
-        <div class="line space24">
-         <button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="right other space" onclick="openOther()" ondblclick="closeOther()"></button>
-        </div>
-        <div class="line last">
-          <button class="left b edge nr">00</button
-          ><button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="left b t tt">⍿</button
-          ><button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="left b t">·</button
-          ><button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="left b t tt">⍿</button
-          ><button class="left  night space" title="sleep" onclick="openSleep()"></button
-          ><button class="left b  nr">23</button
-          ><button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="left b t tt">⍿</button
-          ><button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="left b t">·</button
-          ><button class="left  night space" title="sleep" onclick="openSleep()"></button><button class="left b t tt">⍿</button
-          ><button class="left  night space" title="sleep" onclick="openSleep()"></button
-          ><button class="left b  nr">22</button
-          ><button class="bottom other space" onclick="openOther()"></button
-          ><button class="bottom t tt">⍿</button
-          ><button class="bottom other space" onclick="openOther()"></button
-          ><button class="bottom  t">·</button
-          ><button class="bottom other space" onclick="openOther()"></button
-          ><button class="bottom t tt">⍿</button
-          ><button class="bottom other space" onclick="openOther()"></button
-          ><button class="bottom   nr">21</button
-          ><button class="bottom other space" onclick="openOther()"></button
-          ><button class="bottom t tt">⍿</button
-          ><button class="bottom other space" onclick="openOther()"></button
-          ><button class="bottom  t">·</button
-          ><button class="bottom other space" onclick="openOther()"></button
-          ><button class="bottom t tt">⍿</button
-          ><button class="bottom other space" onclick="openOther()"></button
-          ><button class="bottom   nr">20</button
-          ><button class="bottom fuel space" title="dinner" onclick="openFuel()"></button
-          ><button class="bottom t tt">⍿</button
-          ><button class="bottom fuel space" title="dinner" onclick="openFuel()"></button
-          ><button class="bottom  t">·</button
-          ><button class="bottom fuel space" title="dinner" onclick="openFuel()"></button
-          ><button class="bottom  t tt">⍿</button
-          ><button class="bottom fuel space" title="dinner" onclick="openFuel()"></button
-          ><button class="bottom   nr">19</button
-          ><button class="bottom nap space" title="nap" onclick="openNap()"></button
-          ><button class="bottom t tt">⍿</button
-          ><button class="bottom nap space" title="nap" onclick="openNap()"></button
-          ><button class="bottom t">·</button
-          ><button class="bottom nap space" title="nap" onclick="openNap()"></button
-          ><button class="bottom t tt">⍿</button
-          ><button class="bottom nap space" title="nap" onclick="openNap()"></button
-          ><button class="bottom  edge nr">18</button>
-        </div>
+        <div id="workOnAm"></div>
+        <div id="workOnPm"></div>
+        <div id="workOnPmFive"></div>
+        <div id="workOnPmSix"></div>
+    
+        <div id="lunch"></div>
+        <div id="lunchC"></div>  
+    
+        <div id="breakAm"></div>
+        <div id="breakPm"></div>
+    
+        <div id="sensoryRestThree"></div>
+        <div id="sensoryRestFour"></div>
+        <div id="sensoryRestFive"></div>
+        <div id="sensoryRestSix"></div>
+    
+        <div id="snack"></div>
+        <div id="nap"></div>
+        <div id="lateDinner"></div>
+    
+        <div id="commute"></div>
+  
+        <div id="commuteThree"></div>
+        <div id="commuteFour"></div>
+        <div id="commuteFive"></div>
+        <div id="commuteSix"></div>
+  
+        <div id="commuteToW"></div>  
+        <div id="commuteW"></div>  
+        <div id="commuteToE"></div>  
+        <div id="commuteE4"></div>  
+        <div id="commuteE5"></div>  
+        <div id="commuteE6"></div>  
+    
+        <div id="exercise"></div>
+  
+        <div id="meditateA"></div>
+        <div id="journalA"></div>
+        <div id="meditateB"></div>
+        <div id="journalB"></div>
+        <div id="meditateC"></div>
+        <div id="journalC"></div>
+  
       </div>
-    
-      <div id="errands4" title="errands"></div>
-      <div id="errands5" title="errands"></div>
-      <div id="errands6" title="errands"></div>
-      <div id="lakeOrRiver4"></div>
-      <div id="lakeOrRiver5"></div>
-      <div id="lakeOrRiver6"></div>
-  
-      <div id="breakfast"></div>
-  
-      <div id="workOnAm"></div>
-      <div id="workOnPm"></div>
-      <div id="workOnPmFive"></div>
-      <div id="workOnPmSix"></div>
-  
-      <div id="lunch"></div>
-      <div id="lunchC"></div>  
-  
-      <div id="breakAm"></div>
-      <div id="breakPm"></div>
-  
-      <div id="sensoryRestThree"></div>
-      <div id="sensoryRestFour"></div>
-      <div id="sensoryRestFive"></div>
-      <div id="sensoryRestSix"></div>
-  
-      <div id="snack"></div>
-      <div id="nap"></div>
-      <div id="lateDinner"></div>
-  
-      <div id="commute"></div>
-
-      <div id="commuteThree"></div>
-      <div id="commuteFour"></div>
-      <div id="commuteFive"></div>
-      <div id="commuteSix"></div>
-
-      <div id="commuteToW"></div>  
-      <div id="commuteW"></div>  
-      <div id="commuteToE"></div>  
-      <div id="commuteE4"></div>  
-      <div id="commuteE5"></div>  
-      <div id="commuteE6"></div>  
-  
-      <div id="exercise"></div>
-
-      <div id="meditateA"></div>
-      <div id="journalA"></div>
-      <div id="meditateB"></div>
-      <div id="journalB"></div>
-      <div id="meditateC"></div>
-      <div id="journalC"></div>
-
-    </div>
-
+    </main> 
    <script src="script.js"></script>  
 
   </body>
