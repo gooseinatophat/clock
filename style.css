@@ -1,6 +1,7 @@
 body{
-    background-color: #acacac;
+    background-color: #d4d4d4;
     margin: 0;
+    padding: 0;
 }
 main{
     margin: 0;
@@ -13,19 +14,17 @@ main{
 .barrier{
     width: 685px;
     height: 685px;
-    margin: auto;
-    background-color: #8b8b8b;
+    background-color: #d4d4d4;
     box-sizing: border-box;
     position: relative;
     cursor: pointer;
 }
 .barrier.open{
-    background-color: #303030;
+    background-color: #000000;
 }
 .timesquare{
     width: 705px;
     height: 705px;
-    margin: auto;
     padding: 10px;
     background-color: #dbdbdb;
     box-sizing: border-box;
@@ -47,23 +46,66 @@ main{
 }
 .menu{
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     position: absolute;
     left: 0px;
     width: 100%;
     top: -100px;
     height: 100px;
-    background-color: #888888;
+    background-color: #000000;
     padding: 10px 10px;
     box-sizing: border-box;
     transition: top 0.5s ease;
+}
+.descriptions{
+    display: flex;
+    width: 100%;
+}
+.toggler-btns{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.time-display{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#seconds{
+    color: #ffffff;
+    background-color: #00000059;
+    border-radius: 50%;
+    font-size: 10px;
+    display: block;
+    opacity: 0.5;
+}
+#seconds:hover{
+    cursor: pointer;
+    opacity: 2;
+}
+#time{
+    background-color: #00000000;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    width: 50px;
+    height: 25px;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0.5;
+}
+#time:hover{
+    opacity: 2;
 }
 .menu-toggle{
     position: fixed;
     top: -20px;
     z-index: 1;
-    background-color: #636363;
+    background-color: #ffffff;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -289,42 +331,6 @@ main{
 
 
 
-
-
-
-#seconds{
-    position: absolute;
-    color: #ffffff;
-    background-color: #00000059;
-    border-radius: 50%;
-    top: 65px;
-    right: 25px;
-    font-size: 10px;
-    display: block;
-    opacity: 0.5;
-}
-#seconds:hover{
-    cursor: pointer;
-    opacity: 2;
-}
-#time{
-    display: block;
-    position: absolute;
-    background-color: #00000000;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    top: 24px;
-    right: 55px;
-    width: 50px;
-    height: 25px;
-    padding: 5px;
-    box-sizing: border-box;
-    opacity: 0.5;
-}
-#time:hover{
-    opacity: 2;
-}
 
 #cIndex{
     position: absolute;
@@ -695,7 +701,7 @@ main{
 }
 #morning{
     top: 5px;
-    background-color: #00000075;
+    background-color: #000000;
     height: 5px;
     left: 10px;
 }
@@ -703,12 +709,12 @@ main{
     width:5px;
     right: 5px;
     top: 10px;
-    background-color: #00000075;       
+    background-color: #000000;       
 }
 #eve{
     bottom: 5px;
     height: 5px;
-    background-color: #00000075;    
+    background-color: #000000;    
     right: 10px;    
     transform-origin: right center;
 
@@ -717,7 +723,7 @@ main{
     width:5px;
     left: 5px;
     bottom: 10px;
-    background-color: #00000075;    
+    background-color: #000000;    
     transform-origin: center bottom;
 } 
 
@@ -1320,16 +1326,19 @@ button{
 .edge{
     width: 20px;
 }
- .left.b.nr{
+.top.edge.nr{
+    transform: translateY(-6px);
+}
+.left.b.nr{
     transform: rotate(0deg);
-    transform: translateY(-7px);
+    transform: translateY(-6px);
 }.left.b.t{
     transform: rotate(0deg);
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 .left.b.tt{
     transform: rotate(0deg);
-    transform: translateY(-6px);
+    transform: translateY(-5px);
 }
 .right.t, .right.nr{
     transform: rotate(90deg);
@@ -1341,10 +1350,10 @@ button{
     transform-origin: 35% 5%;
 }
 .left.t{
-    transform-origin: 50% 15%;
+    transform-origin: 50% 12%;
 }
 .left.nr{
-    transform-origin: 45% 35%;
+    transform-origin: 50% 38%;
 }
 .right.nr{
     transform-origin: 45% 30%;
@@ -1356,6 +1365,12 @@ button{
     transform: translateX(3px);
 }
 .bottom.tt{
+    transform: translateY(-5px);
+}
+.bottom.ttt{
+    transform: translateY(-4px);
+}
+.bottom.nr{
     transform: translateY(-6px);
 }
 .space1{
