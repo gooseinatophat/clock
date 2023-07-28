@@ -65,8 +65,18 @@ main{
 .toggler-btns{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
+}
+.AM-PM{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.PM-wrk, .add-errand,.add-water{
+    display: flex;
+    flex-direction: column;
 }
 .time-display{
     display: flex;
@@ -74,6 +84,12 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+}
+.descriptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 #seconds{
     color: #ffffff;
@@ -310,21 +326,23 @@ main{
 
 .smth{
     border-radius: 50%;
-    width: 11px;
-    height: 11px;
+    width: 22px;
+    height: 22px;
     position: relative;
-    top: -1px;
-    left: 2px;
+    top: 4px;
+    left: 8px;
     cursor: pointer;
     background-color: #ffe865;
     transition: left 0.3s ease;
 }
 .smth.open{
-    left: 18px;
+    left: 30px;
     background-color: #ffffff;
 }
 .b10{
-    background-color: #5130ac;
+    background-color: #415dd6;
+    width: 60px;
+    height: 30px;
 }
 
 
