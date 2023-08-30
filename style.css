@@ -10,6 +10,8 @@ main{
     height: 910px;
     justify-content: center;
     align-items: center ;
+    scale: 40%;
+
 }
 .barrier{
     width: 685px;
